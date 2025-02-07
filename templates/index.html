@@ -7,37 +7,37 @@
     <meta name="description" content="Join our exciting hackathon and collaborate with the best minds. Register now!">
     <title>Hackathon Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 </head>
 
 <body>
     <!-- Navbar with Logo -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!-- Logo Section -->
-            <a href="#home" class="logo-container">
-                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Hackathon Logo" class="logo-img">
-                <div class="logo-text" style="display: flex; flex-direction: column;">
-                    <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
-                    <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
-                    <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
-                    <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
-                    <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
-                </div>
-            </a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="{{ url_for('index')}}" style="color: white;">Home</a></li>
-                <li><a href="{{ url_for('guidelines')}}" style="color: white;">Guidelines</a></li>
-                <li><a href="{{ url_for('hackathon')}}" style="color: white;">Hackathon</a></li>
-                <li><a href="{{ url_for('faqs')}}" style="color: white;">FAQs</a></li>
-                <li><a href="{{ url_for('contactus')}}" style="color: white;">Contact</a></li>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo' style="display: flex;"><a href='#'><img style="width: 80px; height: auto;" src="{{ url_for ('static', filename='logo1.png')}}"/>
+                  </a>
+                     <div class="logo-text" style="display: flex; flex-direction: column;">
+                        <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
+                        <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
+                        <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
+                        <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
+                        <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
+                    </div>
+                  </li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="{{ url_for ('index')}}">Home</a></li>
+                    <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
+                    <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
+                    <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
+                    <li><a href="{{ url_for('contactus')}}">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
-        </div>
-    </nav>
+        </nav>
+        </header>
 
     <!-- Hero Section with Banner -->
     <header id="home">
