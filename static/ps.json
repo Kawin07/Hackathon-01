@@ -1,0 +1,1046 @@
+{
+"Sheet1":[
+
+ {
+  "Category, and a detailed Description for 20 problem statements.": 1,
+  "Column2": "Smart Traffic Management System",
+  "Column3": "Smart Cities",
+  "Column4": "Urban Mobility",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Traffic congestion leads to delays, pollution, and inefficiency in cities."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-powered IoT system integrating real-time traffic analytics, vehicle detection, and automated signal control. The system should prioritize emergency vehicles and dynamically adjust signal timings."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 2,
+  "Column2": "AI-Powered Water Quality Monitoring",
+  "Column3": "Environment",
+  "Column4": "Water Management",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Water contamination is a growing concern, leading to health hazards."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based system to monitor parameters like pH, turbidity, TDS, and heavy metals. Use AI\/ML models to predict contamination trends and alert authorities. Data should be accessible via a dashboard."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 3,
+  "Column2": "Autonomous Drone for Disaster Relief",
+  "Column3": "Disaster Management",
+  "Column4": "Emergency Response",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: During disasters, locating survivors and assessing damage is crucial."
+ },
+ {
+  "Column6": "Expected Solution: Design a self-navigating drone with thermal imaging and LiDAR to detect survivors and transmit live data to rescue teams. Implement AI-based image processing for damage analysis."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 4,
+  "Column2": "Smart Energy Meter with Theft Detection",
+  "Column3": "Energy",
+  "Column4": "Renewable Energy",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Electricity theft and inefficient energy usage cause revenue loss and energy wastage."
+ },
+ {
+  "Column6": "Expected Solution: Create an IoT-enabled smart meter that tracks real-time energy consumption, detects power theft anomalies, and provides insights via a mobile app. Implement blockchain for secure transactions."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 5,
+  "Column2": "AI-Powered Waste Segregation System",
+  "Column3": "Waste Management",
+  "Column4": "Clean & Green Technology",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Improper waste segregation leads to environmental pollution."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-based waste segregation system using computer vision to classify waste into biodegradable, recyclable, and non-recyclable categories. Integrate an automated conveyor sorting mechanism."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 6,
+  "Column2": "Smart Wearable for Elderly Health Monitoring",
+  "Column3": "Healthcare",
+  "Column4": "Assistive Technology",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Aging populations require real-time health monitoring."
+ },
+ {
+  "Column6": "Expected Solution: Design a wearable device with ECG, SpO2, and motion sensors to track vitals and detect falls. Send alerts via IoT-enabled mobile applications to caregivers and hospitals."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 7,
+  "Column2": "AI-Driven Crop Disease Prediction System",
+  "Column3": "Agriculture",
+  "Column4": "Precision Farming",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Crop diseases lead to yield loss, impacting farmers' income."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-based disease detection system using drone-based imaging or smartphone cameras. Implement deep learning models to detect diseases and suggest remedies via a mobile app."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 8,
+  "Column2": "Intelligent Surveillance System for Smart Cities",
+  "Column3": "Security",
+  "Column4": "Public Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Crime prevention requires proactive surveillance."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-based surveillance system that uses facial recognition, object detection, and behavioral analysis to detect suspicious activities and alert security teams in real-time."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 9,
+  "Column2": "Autonomous Water Surface Cleaning Robot",
+  "Column3": "Environment",
+  "Column4": "Water Management",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Water pollution from floating waste endangers aquatic ecosystems."
+ },
+ {
+  "Column6": "Expected Solution: Design a self-operating floating robot that collects waste, filters pollutants, and provides real-time water quality reports via IoT sensors. Implement a solar-powered mechanism."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 10,
+  "Column2": "AI-Based Personalized Learning System",
+  "Column3": "Education",
+  "Column4": "EdTech",
+  "Column5": "Software",
+  "Column6": "Background: One-size-fits-all education leads to inefficient learning."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-driven learning platform that provides personalized learning paths, adapts to student strengths and weaknesses, and includes interactive assessments."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 11,
+  "Column2": "Cybersecurity Threat Detection System",
+  "Column3": "Cybersecurity",
+  "Column4": "Digital Security",
+  "Column5": "Software",
+  "Column6": "Background: Cyberattacks are increasing, leading to data breaches."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-powered system that detects phishing, malware, and fraud in real-time. Use machine learning models to analyze suspicious network activities and send alerts."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 12,
+  "Column2": "Smart Automated Greenhouse System",
+  "Column3": "Agriculture",
+  "Column4": "Smart Irrigation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Farmers struggle to maintain optimal growing conditions."
+ },
+ {
+  "Column6": "Expected Solution: Build a climate-controlled greenhouse that automatically adjusts temperature, humidity, and watering schedules using IoT sensors and AI-driven automation."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 13,
+  "Column2": "AI-Based Sign Language Translator",
+  "Column3": "Accessibility",
+  "Column4": "Inclusive Technology",
+  "Column5": "Software",
+  "Column6": "Background: Communication barriers exist for the hearing-impaired."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI model that translates sign language gestures into text and speech using computer vision and NLP to improve accessibility."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 14,
+  "Column2": "Smart Helmet for Industrial Safety",
+  "Column3": "Workplace Safety",
+  "Column4": "Smart Infrastructure",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Industrial accidents due to lack of safety measures are common."
+ },
+ {
+  "Column6": "Expected Solution: Create an IoT-enabled helmet with impact detection, gas sensors, and GPS tracking to enhance worker safety. The helmet should send real-time alerts."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 15,
+  "Column2": "Blockchain-Based Digital Identity System",
+  "Column3": "Blockchain",
+  "Column4": "Digital Governance",
+  "Column5": "Software",
+  "Column6": "Background: Identity theft is a growing issue in digital transactions."
+ },
+ {
+  "Column6": "Expected Solution: Design a blockchain-powered digital identity system that allows users to store and verify their credentials securely without relying on centralized authorities."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 16,
+  "Column2": "AI-Powered Mental Health Chatbot",
+  "Column3": "Healthcare",
+  "Column4": "Wellness & AI",
+  "Column5": "Software",
+  "Column6": "Background: Mental health services are not easily accessible."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI chatbot that provides mental health support, recommends self-help techniques, and connects users with professionals if needed."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 17,
+  "Column2": "AI-Based Road Condition Monitoring System",
+  "Column3": "Infrastructure",
+  "Column4": "Smart Roads",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Poor road conditions contribute to accidents."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-enabled system that uses sensors and computer vision to detect potholes, cracks, and hazards. Data should be integrated with government road maintenance systems."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 18,
+  "Column2": "Smart Farming Using IoT",
+  "Column3": "Agriculture",
+  "Column4": "AgriTech",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Traditional farming lacks precision."
+ },
+ {
+  "Column6": "Expected Solution: Create a sensor-based IoT system that monitors soil moisture, weather, and crop health, providing farmers with real-time analytics and automated irrigation control."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 19,
+  "Column2": "AI-Powered Disaster Prediction System",
+  "Column3": "Disaster Management",
+  "Column4": "Early Warning Systems",
+  "Column5": "Software",
+  "Column6": "Background: Natural disasters cause significant loss of life and property."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-powered system that analyzes satellite data, weather conditions, and seismic activity to predict disasters and alert authorities."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 20,
+  "Column2": "Smart Air Quality Monitoring System",
+  "Column3": "Environment",
+  "Column4": "Air Pollution Control",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Air pollution is a severe health hazard."
+ },
+ {
+  "Column6": "Expected Solution: Develop a real-time air quality monitoring system with IoT sensors to detect pollutants like CO2, PM2.5, and NOx. Use ML models to predict pollution trends."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 1,
+  "Column2": "Autonomous Electric Vehicle Charging Station",
+  "Column3": "Smart Cities",
+  "Column4": "E-Mobility",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: EV adoption is increasing, but charging stations are inefficient."
+ },
+ {
+  "Column6": "Expected Solution: Develop a smart EV charging station with automated parking, AI-based queue management, and solar integration. Provide real-time monitoring and reservation via a mobile app."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 2,
+  "Column2": "AI-Powered Food Waste Reduction System",
+  "Column3": "Sustainability",
+  "Column4": "Zero Hunger",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: A large portion of food is wasted due to inefficient distribution."
+ },
+ {
+  "Column6": "Expected Solution: Build an IoT-based food monitoring system that tracks food expiry in households and restaurants, predicts wastage, and connects surplus food to NGOs. Use AI for demand forecasting."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 3,
+  "Column2": "AI-Based Personalized Smart Mirror",
+  "Column3": "Smart Homes",
+  "Column4": "IoT",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Traditional mirrors lack interactive features."
+ },
+ {
+  "Column6": "Expected Solution: Design a smart mirror with voice commands, facial recognition, weather updates, and health monitoring. Use AI to provide personalized recommendations for skincare, news, and schedules."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 4,
+  "Column2": "Smart Fire Detection and Suppression System",
+  "Column3": "Disaster Management",
+  "Column4": "Fire Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Fire accidents cause significant loss of life and property."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-powered fire detection system with real-time alerts, automatic sprinklers, and IoT-enabled fire extinguishers for industrial and residential spaces."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 5,
+  "Column2": "AI-Based Road Sign Violation Detection System",
+  "Column3": "Smart Transportation",
+  "Column4": "Road Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Traffic rule violations contribute to accidents."
+ },
+ {
+  "Column6": "Expected Solution: Create a computer vision-based system that detects traffic violations (red light jumping, wrong way, no helmet, overspeeding, etc.) and issues automatic challans."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 6,
+  "Column2": "AI-Powered Noise Pollution Monitoring System",
+  "Column3": "Environment",
+  "Column4": "Noise Control",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Noise pollution affects mental and physical health."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based noise level monitoring system that maps real-time noise pollution and provides AI-driven analytics for noise reduction strategies."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 7,
+  "Column2": "Blockchain-Based Voting System",
+  "Column3": "Governance",
+  "Column4": "Digital Democracy",
+  "Column5": "Software",
+  "Column6": "Background: Traditional voting systems face security risks and inefficiencies."
+ },
+ {
+  "Column6": "Expected Solution: Develop a secure, tamper-proof blockchain-based voting system with biometric authentication and distributed ledger security to enhance election integrity."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 8,
+  "Column2": "AI-Powered Wildlife Tracking System",
+  "Column3": "Environment",
+  "Column4": "Biodiversity Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Illegal poaching and habitat destruction threaten wildlife."
+ },
+ {
+  "Column6": "Expected Solution: Create a smart collar or drone-based tracking system using GPS, IoT, and AI to monitor wildlife movement, detect poaching, and alert forest authorities."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 9,
+  "Column2": "AI-Based Smart Tutor for Specially-Abled Children",
+  "Column3": "Education",
+  "Column4": "Inclusive Learning",
+  "Column5": "Software",
+  "Column6": "Background: Learning tools for specially-abled children are limited."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-driven tutoring system that uses speech recognition, sign language translation, and gamification to enhance learning for students with disabilities."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 10,
+  "Column2": "Smart Indoor Navigation System for Blind People",
+  "Column3": "Accessibility",
+  "Column4": "Assistive Technology",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Blind individuals struggle with indoor navigation."
+ },
+ {
+  "Column6": "Expected Solution: Design a wearable or smartphone-based navigation system using LiDAR, AI-based obstacle detection, and voice-guided navigation."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 11,
+  "Column2": "IoT-Based Smart Parking System",
+  "Column3": "Smart Cities",
+  "Column4": "Smart Parking",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Finding parking in cities is time-consuming and inefficient."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based parking system that detects available spots, navigates users, and allows pre-booking via an app with automated payment integration."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 12,
+  "Column2": "AI-Based Fake News Detection System",
+  "Column3": "Media & Communication",
+  "Column4": "Misinformation Control",
+  "Column5": "Software",
+  "Column6": "Background: Fake news spreads misinformation and creates panic."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-powered tool that analyzes text, images, and videos to detect misinformation using NLP and fact-checking algorithms."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 13,
+  "Column2": "Smart Water Leakage Detection System",
+  "Column3": "Infrastructure",
+  "Column4": "Water Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Undetected leaks lead to water wastage."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based smart water leakage detection system with AI-driven analytics to monitor pipelines and alert authorities in case of leaks."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 14,
+  "Column2": "AI-Powered Traffic Rule Violation Predictor",
+  "Column3": "Transportation",
+  "Column4": "Road Safety",
+  "Column5": "Software",
+  "Column6": "Background: Predicting traffic violations can prevent accidents."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-based system that uses historical data, vehicle movement patterns, and driver behavior to predict and alert authorities about possible violations."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 15,
+  "Column2": "Smart Wearable for Remote Patient Monitoring",
+  "Column3": "Healthcare",
+  "Column4": "Telemedicine",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Patients with chronic illnesses require continuous monitoring."
+ },
+ {
+  "Column6": "Expected Solution: Design a wearable device that monitors vitals (heart rate, BP, SpO2, glucose levels) and transmits data to doctors via IoT and cloud integration."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 16,
+  "Column2": "AI-Based Productivity Tracker for Workplaces",
+  "Column3": "Workplace Efficiency",
+  "Column4": "Digital Transformation",
+  "Column5": "Software",
+  "Column6": "Background: Employee productivity tracking is inefficient."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-powered system that monitors work patterns, analyzes screen time, and provides performance insights while ensuring privacy."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 17,
+  "Column2": "AI-Powered Personalized Grocery Shopping Assistant",
+  "Column3": "Retail",
+  "Column4": "Smart Shopping",
+  "Column5": "Software",
+  "Column6": "Background: Consumers struggle with meal planning and grocery selection."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-powered app that suggests groceries based on dietary needs, health goals, and budget, integrates with stores for one-click ordering, and reduces food waste."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 18,
+  "Column2": "IoT-Based Smart Public Restroom System",
+  "Column3": "Smart Cities",
+  "Column4": "Sanitation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Public restrooms often lack hygiene monitoring."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based system that monitors restroom usage, cleanliness, and refill status of essentials (soap, water, tissues) and sends automated alerts to maintenance teams."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 19,
+  "Column2": "AI-Powered Virtual Dressing Room",
+  "Column3": "E-Commerce",
+  "Column4": "Augmented Reality",
+  "Column5": "Software",
+  "Column6": "Background: Online clothing shopping lacks trial options."
+ },
+ {
+  "Column6": "Expected Solution: Build an AR-based virtual dressing room that allows users to try on clothes in real-time using AI and camera-based body tracking."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 20,
+  "Column2": "AI-Powered Resume Screening System",
+  "Column3": "Human Resources",
+  "Column4": "HRTech",
+  "Column5": "Software",
+  "Column6": "Background: Hiring managers receive thousands of resumes, making screening inefficient."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-based resume parser that analyzes skills, experience, and job fit to rank candidates based on job descriptions."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 1,
+  "Column2": "Smart Drone-Based Agricultural Spraying System",
+  "Column3": "Agriculture",
+  "Column4": "Precision Farming",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Farmers struggle with inefficient pesticide spraying."
+ },
+ {
+  "Column6": "Expected Solution: Design an AI-powered drone that detects crop diseases, performs targeted spraying, and minimizes chemical wastage using IoT and AI analytics."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 2,
+  "Column2": "IoT-Based Bridge Structural Health Monitoring System",
+  "Column3": "Infrastructure",
+  "Column4": "Smart Cities",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Bridge failures occur due to delayed maintenance."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based system that sensors bridge vibrations, detects cracks, and predicts structural integrity issues in real time."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 3,
+  "Column2": "AI-Powered Smart Inventory Management System",
+  "Column3": "Retail",
+  "Column4": "Supply Chain Optimization",
+  "Column5": "Software",
+  "Column6": "Background: Traditional inventory tracking is prone to errors."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-based system that automates inventory tracking, predicts demand, and alerts when stocks are low for warehouses and retail stores."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 4,
+  "Column2": "Real-Time Flood Monitoring and Alert System",
+  "Column3": "Disaster Management",
+  "Column4": "Climate Resilience",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Floods cause major damage due to lack of early warnings."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based flood detection system that monitors water levels, predicts flood risks, and sends real-time alerts to authorities and residents."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 5,
+  "Column2": "AI-Powered Smart Resume Builder",
+  "Column3": "Human Resources",
+  "Column4": "Employment Assistance",
+  "Column5": "Software",
+  "Column6": "Background: Job seekers struggle with resume optimization."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-driven resume builder that analyzes job descriptions, suggests skills, and auto-formats resumes to increase hiring chances."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 6,
+  "Column2": "IoT-Based Smart Irrigation System",
+  "Column3": "Agriculture",
+  "Column4": "Water Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Water wastage in agriculture is a critical issue."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based irrigation system that monitors soil moisture, weather conditions, and automates watering to optimize water usage."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 7,
+  "Column2": "Smart Helmet for Construction Safety",
+  "Column3": "Occupational Safety",
+  "Column4": "Workplace Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Construction sites face high accident rates."
+ },
+ {
+  "Column6": "Expected Solution: Design a smart helmet with fall detection, GPS tracking, and real-time alerts to improve worker safety."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 8,
+  "Column2": "Blockchain-Based Digital Land Record System",
+  "Column3": "Governance",
+  "Column4": "Land Management",
+  "Column5": "Software",
+  "Column6": "Background: Land disputes arise due to fraudulent record-keeping."
+ },
+ {
+  "Column6": "Expected Solution: Develop a blockchain-powered land registry system that ensures secure, tamper-proof digital land records accessible to citizens and government agencies."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 9,
+  "Column2": "AI-Based Mental Health Chatbot",
+  "Column3": "Healthcare",
+  "Column4": "Emotional Wellbeing",
+  "Column5": "Software",
+  "Column6": "Background: Mental health services are not accessible to all."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-powered chatbot that analyzes user sentiment, provides mental health recommendations, and connects users to therapists when needed."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 10,
+  "Column2": "Smart AI-Based Traffic Light System",
+  "Column3": "Smart Cities",
+  "Column4": "Intelligent Transportation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Fixed-time traffic lights cause congestion."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-powered adaptive traffic light system that adjusts signal duration based on real-time traffic conditions."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 11,
+  "Column2": "AI-Powered Smart CCTV for Crime Detection",
+  "Column3": "Law Enforcement",
+  "Column4": "Public Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Traditional CCTV systems lack intelligence."
+ },
+ {
+  "Column6": "Expected Solution: Implement an AI-powered CCTV system that detects suspicious activities, identifies weapons, and alerts authorities in real-time."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 12,
+  "Column2": "IoT-Based Smart Medicine Dispenser",
+  "Column3": "Healthcare",
+  "Column4": "Elderly Care",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Patients often forget to take medicines on time."
+ },
+ {
+  "Column6": "Expected Solution: Build an IoT-enabled medicine dispenser that dispenses the correct dosage at scheduled times and notifies caregivers if missed."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 13,
+  "Column2": "AI-Powered Digital Water Quality Monitoring System",
+  "Column3": "Environment",
+  "Column4": "Water Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Water pollution affects millions worldwide."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-powered IoT-based system that monitors water quality parameters (pH, turbidity, toxins) and sends real-time reports."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 14,
+  "Column2": "AI-Based Personalized Career Guidance System",
+  "Column3": "Education",
+  "Column4": "Skill Development",
+  "Column5": "Software",
+  "Column6": "Background: Students lack access to personalized career advice."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-driven career recommendation system that analyzes skills, interests, and market trends to suggest suitable career paths."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 15,
+  "Column2": "Smart Grid Energy Management System",
+  "Column3": "Energy",
+  "Column4": "Renewable Energy",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Energy wastage in households and industries is high."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based smart energy management system that monitors electricity usage, suggests energy-saving measures, and integrates renewable sources."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 16,
+  "Column2": "AI-Based Crop Disease Detection App",
+  "Column3": "Agriculture",
+  "Column4": "Smart Farming",
+  "Column5": "Software",
+  "Column6": "Background: Farmers struggle to diagnose crop diseases early."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-based mobile app that analyzes crop images, identifies diseases, and provides treatment recommendations."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 17,
+  "Column2": "IoT-Based Public Transport Tracking System",
+  "Column3": "Transportation",
+  "Column4": "Smart Mobility",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Passengers struggle with unpredictable public transport schedules."
+ },
+ {
+  "Column6": "Expected Solution: Develop a real-time GPS-based tracking system for buses\/trains with mobile app integration to provide accurate arrival times and occupancy levels."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 18,
+  "Column2": "AI-Powered Smart Garbage Segregation System",
+  "Column3": "Waste Management",
+  "Column4": "Clean Cities",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Improper waste segregation leads to ineffective recycling."
+ },
+ {
+  "Column6": "Expected Solution: Design an AI-powered smart waste bin that automatically identifies and sorts waste into biodegradable, recyclable, and non-recyclable categories."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 19,
+  "Column2": "AI-Based Personalized News Filtering System",
+  "Column3": "Media & Journalism",
+  "Column4": "Digital News",
+  "Column5": "Software",
+  "Column6": "Background: Users struggle with information overload."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-based personalized news aggregation app that filters and ranks news articles based on user preferences and credibility scores."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 20,
+  "Column2": "Smart Wearable for Women’s Safety",
+  "Column3": "Public Safety",
+  "Column4": "Women Empowerment",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Women’s safety remains a critical concern."
+ },
+ {
+  "Column6": "Expected Solution: Develop a wearable device that includes panic alerts, real-time GPS tracking, voice activation, and automatic emergency calls to ensure women's safety."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 1,
+  "Column2": "AI-Powered Smart Parking System",
+  "Column3": "Smart Cities",
+  "Column4": "Urban Mobility",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Parking congestion in cities leads to traffic issues."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-based parking system that detects empty slots, guides vehicles using a mobile app, and enables online reservations."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 2,
+  "Column2": "IoT-Based Smart Water Leakage Detection System",
+  "Column3": "Infrastructure",
+  "Column4": "Water Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Undetected water leakages cause wastage and infrastructure damage."
+ },
+ {
+  "Column6": "Expected Solution: Create an IoT-based sensor system that monitors pipelines, detects leaks, and alerts maintenance teams in real-time."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 3,
+  "Column2": "AI-Based Personalized Learning Assistant",
+  "Column3": "Education",
+  "Column4": "Digital Learning",
+  "Column5": "Software",
+  "Column6": "Background: Students struggle with personalized learning experiences."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-driven learning assistant that analyzes student performance, suggests tailored study plans, and provides AI-powered doubt-solving."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 4,
+  "Column2": "IoT-Enabled Smart Fire Detection System",
+  "Column3": "Disaster Management",
+  "Column4": "Public Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Fires cause severe losses due to late detection."
+ },
+ {
+  "Column6": "Expected Solution: Design an IoT-based fire detection system with heat, smoke, and gas sensors that send instant alerts to authorities and residents."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 5,
+  "Column2": "AI-Based Automated Resume Shortlisting for HR",
+  "Column3": "Human Resources",
+  "Column4": "Employment Assistance",
+  "Column5": "Software",
+  "Column6": "Background: Manual resume screening is inefficient."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-powered HR tool that analyzes resumes, matches job requirements, and ranks applicants based on skills and experience."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 6,
+  "Column2": "Blockchain-Based Digital Voting System",
+  "Column3": "Governance",
+  "Column4": "Secure Elections",
+  "Column5": "Software",
+  "Column6": "Background: Election fraud and inefficiencies reduce voter trust."
+ },
+ {
+  "Column6": "Expected Solution: Build a blockchain-powered online voting system that ensures secure, transparent, and tamper-proof elections."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 7,
+  "Column2": "IoT-Based Smart Waste Collection System",
+  "Column3": "Waste Management",
+  "Column4": "Clean Cities",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Inefficient waste collection leads to overflowing garbage bins."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-enabled waste management system that monitors bin levels, optimizes collection routes, and ensures timely disposal."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 8,
+  "Column2": "AI-Powered Fake News Detection System",
+  "Column3": "Media & Journalism",
+  "Column4": "Misinformation Control",
+  "Column5": "Software",
+  "Column6": "Background: Fake news spreads misinformation rapidly."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-based fact-checking system that analyzes news sources, verifies credibility, and highlights misinformation."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 9,
+  "Column2": "AI-Powered Sign Language Translator",
+  "Column3": "Accessibility",
+  "Column4": "Inclusive Technology",
+  "Column5": "Software",
+  "Column6": "Background: Communication barriers exist for hearing-impaired individuals."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-based translator that converts sign language gestures into text and speech in real-time."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 10,
+  "Column2": "Smart Wearable for Posture Correction",
+  "Column3": "Healthcare",
+  "Column4": "Personal Wellness",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Poor posture causes long-term health issues."
+ },
+ {
+  "Column6": "Expected Solution: Design a smart wearable device that monitors posture, gives vibration alerts for correction, and provides analytics via a mobile app."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 11,
+  "Column2": "IoT-Based Smart Traffic Violation Detection System",
+  "Column3": "Transportation",
+  "Column4": "Road Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Traffic violations increase accident risks."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-enabled traffic monitoring system that detects rule violations (red light jumping, overspeeding) and issues automated e-challans."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 12,
+  "Column2": "AI-Based Crop Yield Prediction System",
+  "Column3": "Agriculture",
+  "Column4": "Smart Farming",
+  "Column5": "Software",
+  "Column6": "Background: Farmers struggle to predict crop yield."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-powered prediction model that analyzes weather, soil, and past yield data to forecast crop production."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 13,
+  "Column2": "IoT-Based Smart Locker System for Deliveries",
+  "Column3": "Logistics",
+  "Column4": "Last-Mile Delivery",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Parcel theft and delivery failures are common."
+ },
+ {
+  "Column6": "Expected Solution: Develop a smart locker system that stores deliveries securely, sends OTP-based access, and notifies recipients."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 14,
+  "Column2": "AI-Based Wildlife Poaching Detection System",
+  "Column3": "Environment",
+  "Column4": "Biodiversity Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Illegal poaching threatens endangered species."
+ },
+ {
+  "Column6": "Expected Solution: Design an AI-powered surveillance system that detects poaching activities via cameras, sensors, and real-time alerts."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 15,
+  "Column2": "Smart AI-Based Virtual Job Interview System",
+  "Column3": "Human Resources",
+  "Column4": "Employment Assistance",
+  "Column5": "Software",
+  "Column6": "Background: Job interviews require human evaluators, causing scheduling delays."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-driven interview platform that conducts interviews, evaluates candidate responses, and generates detailed reports."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 16,
+  "Column2": "IoT-Based Smart Gas Leak Detection System",
+  "Column3": "Safety",
+  "Column4": "Industrial Safety",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Gas leaks lead to industrial disasters."
+ },
+ {
+  "Column6": "Expected Solution: Develop an IoT-based gas detection system that monitors air quality, detects leaks, and triggers emergency shutdowns."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 17,
+  "Column2": "AI-Based Legal Document Analyzer",
+  "Column3": "LegalTech",
+  "Column4": "Smart Governance",
+  "Column5": "Software",
+  "Column6": "Background: Legal document analysis is time-consuming."
+ },
+ {
+  "Column6": "Expected Solution: Create an AI-powered system that scans contracts, highlights risks, and suggests modifications for compliance."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 18,
+  "Column2": "IoT-Enabled Smart Home Energy Saver",
+  "Column3": "Smart Homes",
+  "Column4": "Energy Efficiency",
+  "Column5": "Hardware + Software",
+  "Column6": "Background: Wastage of electricity in homes leads to high energy costs."
+ },
+ {
+  "Column6": "Expected Solution: Design a smart home automation system that monitors appliance usage, turns off idle devices, and optimizes power consumption."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 19,
+  "Column2": "AI-Based Personalized Grocery Shopping Assistant",
+  "Column3": "Retail",
+  "Column4": "E-Commerce",
+  "Column5": "Software",
+  "Column6": "Background: Grocery shoppers struggle with personalized recommendations."
+ },
+ {
+  "Column6": "Expected Solution: Build an AI-powered grocery assistant that suggests items based on past purchases, dietary preferences, and budget."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 20,
+  "Column2": "AI-Powered Online Exam Proctoring System",
+  "Column3": "Education",
+  "Column4": "EdTech",
+  "Column5": "Software",
+  "Column6": "Background: Online exams suffer from cheating and malpractice."
+ },
+ {
+  "Column6": "Expected Solution: Develop an AI-driven exam proctoring system that monitors student behavior, detects anomalies, and ensures integrity in online assessments."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 1,
+  "Column2": "IoT-Based Smart Energy Meter",
+  "Column3": "Smart Grid",
+  "Column4": "Energy Management",
+  "Column5": "Hardware + Software",
+  "Column6": "Design an IoT-enabled energy meter that provides real-time electricity usage data and sends alerts for high consumption."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 2,
+  "Column2": "Wireless Power Transmission System",
+  "Column3": "Power Electronics",
+  "Column4": "Wireless Technology",
+  "Column5": "Hardware",
+  "Column6": "Develop a system to transfer power wirelessly for applications like EV charging or medical implants."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 3,
+  "Column2": "Solar-Powered EV Charging Station",
+  "Column3": "Renewable Energy",
+  "Column4": "Sustainable Transportation",
+  "Column5": "Hardware",
+  "Column6": "Create a solar-based EV charging system with battery storage and IoT monitoring for efficiency."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 4,
+  "Column2": "Automatic Power Factor Correction System",
+  "Column3": "Power Systems",
+  "Column4": "Industrial Energy Efficiency",
+  "Column5": "Hardware + Software",
+  "Column6": "Design a microcontroller-based system that monitors and corrects the power factor in industrial loads."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 5,
+  "Column2": "AI-Powered Fault Detection in Power Lines",
+  "Column3": "Smart Grid",
+  "Column4": "AI in Power Systems",
+  "Column5": "Software",
+  "Column6": "Develop an AI model that detects faults in transmission lines based on real-time sensor data."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 6,
+  "Column2": "IoT-Based Transformer Health Monitoring",
+  "Column3": "Power Systems",
+  "Column4": "Predictive Maintenance",
+  "Column5": "Hardware + Software",
+  "Column6": "Create a smart monitoring system to track voltage, temperature, and load conditions in transformers."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 7,
+  "Column2": "Piezoelectric Energy Harvester for Roads",
+  "Column3": "Renewable Energy",
+  "Column4": "Smart Infrastructure",
+  "Column5": "Hardware",
+  "Column6": "Design a piezoelectric energy harvesting system that generates power from vehicle movements on roads."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 8,
+  "Column2": "AI-Optimized Load Balancing in Smart Grids",
+  "Column3": "Smart Grid",
+  "Column4": "AI in Energy Distribution",
+  "Column5": "Software",
+  "Column6": "Build an AI-based algorithm to distribute electricity efficiently in a smart grid system."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 9,
+  "Column2": "IoT-Based Industrial Motor Control",
+  "Column3": "Industrial Automation",
+  "Column4": "Smart Manufacturing",
+  "Column5": "Hardware + Software",
+  "Column6": "Develop an IoT-powered system for remote control and fault detection in industrial motors."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 10,
+  "Column2": "Battery Management System for Electric Vehicles",
+  "Column3": "Electric Vehicles",
+  "Column4": "Energy Storage",
+  "Column5": "Hardware + Software",
+  "Column6": "Create a smart BMS that monitors cell voltages, temperature, and ensures battery safety."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 11,
+  "Column2": "Wireless Sensor Network for Smart Agriculture",
+  "Column3": "IoT & Agriculture",
+  "Column4": "Precision Farming",
+  "Column5": "Hardware + Software",
+  "Column6": "Design a network of wireless sensors that monitor soil moisture, temperature, and automate irrigation."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 12,
+  "Column2": "Energy-Efficient Smart Lighting System",
+  "Column3": "Smart Homes",
+  "Column4": "Energy Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Implement a motion and ambient light-based smart lighting system for energy conservation."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 13,
+  "Column2": "IoT-Based Water Pump Controller for Agriculture",
+  "Column3": "IoT & Agriculture",
+  "Column4": "Water Conservation",
+  "Column5": "Hardware + Software",
+  "Column6": "Build an automated water pump system that operates based on soil moisture levels."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 14,
+  "Column2": "AI-Based Smart Grid Load Forecasting",
+  "Column3": "Power Systems",
+  "Column4": "AI in Energy Demand",
+  "Column5": "Software",
+  "Column6": "Develop an AI model that predicts future energy demand and optimizes grid operations."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 15,
+  "Column2": "Anti-Theft Protection System for Power Lines",
+  "Column3": "Security & Power",
+  "Column4": "Smart Security",
+  "Column5": "Hardware + Software",
+  "Column6": "Design a power line monitoring system that detects unauthorized tampering or theft."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 16,
+  "Column2": "Hybrid Wind-Solar Power Generation System",
+  "Column3": "Renewable Energy",
+  "Column4": "Hybrid Energy Systems",
+  "Column5": "Hardware",
+  "Column6": "Create a hybrid renewable energy system that combines solar panels and wind turbines for power generation."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 17,
+  "Column2": "Gesture-Controlled Home Automation",
+  "Column3": "IoT & Automation",
+  "Column4": "Smart Homes",
+  "Column5": "Hardware + Software",
+  "Column6": "Develop a gesture-based system that allows users to control lights, fans, and appliances."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 18,
+  "Column2": "Self-Healing Electrical Grid System",
+  "Column3": "Smart Grid",
+  "Column4": "Resilient Energy Systems",
+  "Column5": "Software",
+  "Column6": "Design an AI-powered self-healing grid that detects faults and automatically reroutes power."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 19,
+  "Column2": "Wireless EV Charging with AI Optimization",
+  "Column3": "Electric Vehicles",
+  "Column4": "AI in Charging Technology",
+  "Column5": "Hardware + Software",
+  "Column6": "Implement an AI-based wireless EV charging system that adapts charging rates based on battery health."
+ },
+ {
+  "Category, and a detailed Description for 20 problem statements.": 20,
+  "Column2": "AI-Based Predictive Maintenance for Industrial Equipment",
+  "Column3": "Industrial IoT",
+  "Column4": "AI in Manufacturing",
+  "Column5": "Hardware + Software",
+  "Column6": "Develop an AI-driven system that predicts failures in industrial machines using sensor data."
+ }
+]
+
+}
