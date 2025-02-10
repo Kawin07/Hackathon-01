@@ -12,41 +12,45 @@
 
 <body>
     <!-- Navbar with Logo -->
-    <header>
-        <nav>
-            <ul class='nav-bar'>
-                <li class='logo' style="display: flex;"><a href='#'><img style="width: 80px; height: auto;" src="{{ url_for ('static', filename='logo1.png')}}"/>
-                  </a>
-                     <div class="logo-text" style="display: flex; flex-direction: column;">
-                        <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
-                        <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
-                        <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
-                        <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
-                        <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
-                    </div>
-                  </li>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="{{ url_for ('index')}}">Home</a></li>
-                    <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
-                    <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
-                    <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
-                    <li><a href="{{ url_for('contactus')}}">Contact</a></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
-        </nav>
-        </header>
+  <header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo' style="display: flex;">
+                <a href='#'>
+                    <img style="width: 80px; height: auto;" src="{{ url_for ('static', filename='logo1.png')}}" />
+                </a>
+                <div class="logo-text" style="display: flex; flex-direction: column;">
+                    <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
+                    <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
+                    <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
+                    <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
+                    <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
+                </div>
+            </li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="{{ url_for ('index')}}">Home</a></li>
+                <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
+                <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
+                <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
+                <li><a href="{{ url_for('contactus')}}">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Hero Section with Banner -->
-    <header id="home">
-        <div class="hero">
-            <div class="hero-content">
-                <p>Innovate, Code, Win!</p>
-                <button class="cta-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSelNnyQhc5lNYZ-iclPBxim8latAZD2zZkRW9UHQRWqYqWHZA/viewform?usp=header'">
-                    <i class="fas fa-user-plus"></i> Register Now
-                </button>
+<header id="home">
+    <div class="hero">
+        <div class="hero-content">
+            <p>Innovate, Code, Win!</p>
+            <button class="cta-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSelNnyQhc5lNYZ-iclPBxim8latAZD2zZkRW9UHQRWqYqWHZA/viewform?usp=header'">
+                <i class="fas fa-user-plus"></i> Register Now
+            </button>
+        </div>
+    </div>
+</header>
                 
             </div>
         </div>

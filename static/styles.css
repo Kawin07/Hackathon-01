@@ -675,39 +675,6 @@ footer {
 
 @media (max-width: 768px) {
 
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        opacity: .9;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;  
-        z-index: 9999;
-        background-color: var(--color2);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .menu li {
-        margin-top: 40px;
-    }
-
-    .menu li a {
-        padding: 10px;
-    }
-
-    .open-menu,
-    .close-menu {
-        display: block;
-    }
-
-
-    #check:checked ~ .menu {
-        right: 0;
-    }
     .cta-button{
         position: static;
         /* top: 10px; */
@@ -759,8 +726,40 @@ footer {
     .footer-left {
         max-width: 100%;
     }
-
-
 }
 
+@media (max-width: 823px) {
     
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        opacity: .9;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;  
+        z-index: 9999;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
