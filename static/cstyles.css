@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body and General Styling */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #0d253f;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative; /* Add position relative for the pseudo-element */
+}
+
+.nav-links a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative; /* Ensure the pseudo-element aligns correctly */
+}
+
+/* Line Animation on Hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust distance of line from text */
+    left: 0;
+    width: 0%;
+    height: 2px; /* Line thickness */
+    background-color: #B2E4D6; /* Line color */
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+.nav-links a:hover {
+    color: #B2E4D6; /* Change text color on hover */
+}
+
+
+/* Contact Form Section */
+#contact {
+    background-color: white;
+    padding: 60px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add a light shadow around the form */
+    border-radius: 10px;
+}
+
+/* Contact Form Layout */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto; /* Center form */
+}
+
+/* Input and Textarea Fields */
+#contact input,
+#contact textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition */
+    outline: none;
+    position: relative;
+}
+
+/* Placeholder Styles */
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 12px;
+    top: 50%; /* Position the placeholder in the middle */
+    transform: translateY(-50%); /* Adjust vertically to center */
+}
+
+/* Move placeholder on hover and focus */
+#contact input:hover::placeholder,
+#contact textarea:hover::placeholder,
+#contact input:focus::placeholder,
+#contact textarea:focus::placeholder {
+    top: 10px; /* Move the placeholder upwards */
+    font-size: 12px; /* Reduce font size */
+    color: #ff6600; /* Change placeholder color on hover/focus */
+}
+
+/* Hover effect on input fields */
+#contact input:hover,
+#contact textarea:hover {
+    border-color: #ff8533; /* Lighter border color on hover */
+}
+
+/* Input and Textarea Focus Effects */
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #ff6600; /* Change border color when focused */
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); /* Add a subtle glow */
+}
+
+/* Button Styling */
+#contact button {
+    background: linear-gradient(45deg, #ff6600, #ff3366); /* Gradient background */
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover Effects for Button */
+#contact button:hover {
+    background: linear-gradient(45deg, #ff3366, #ff6600); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow on hover */
+}
+
+/* Button Focus Style */
+#contact button:focus {
+    outline: none;
+    border: 2px solid #ff6600;
+}
+
+/* Responsive Form Layout */
+@media (max-width: 768px) {
+    #contact form {
+        padding: 20px;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #contact button {
+        font-size: 16px;
+    }
+}
+/* Footer */
+footer {
+    background: url("college_background.jpg") no-repeat center center/cover;
+    position: relative;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 40px 0;
+  }
+  
+  .footer-overlay {
+    /* background: rgba(0, 0, 0, 0.6); */
+    padding: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    max-width: 60%;
+  }
+  
+  .footer-left h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .footer-left p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer-right {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 70px;
+  }
+  
+  .footer-right .icon {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .footer-right a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom a {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .college-logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .footer-container p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .footer-container a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-left {
+    text-align: left;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card a:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
+  }
+  
+  .card .social-link1:hover {
+    background-color: #171515;
+  }
+  .card .social-link2:hover {
+    background-color: #0a66c2;
+  }
+  .card .social-link3:hover {
+    background-color: #25d366;
+  }
+  .card .social-link4:hover {
+    background-color: #1877f2;
+  }
+  

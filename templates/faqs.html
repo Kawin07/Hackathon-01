@@ -3,36 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title> Responsive FAQ Accordion </title>
+    <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-</head>
   </head>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
 
 * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-} 
-
-body {
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  background: white;
-  --color1: #FFF ;
-  --color2: #181818 ;
 }
 
-  
-
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: white;
+  padding: 0; /* Removed padding */
+  margin: 0; /* Removed margin */
+}
 
 ::selection {
   background: #7d2ae8;
@@ -232,15 +229,8 @@ body {
     width: 98%;
   }
 }
-
-
-
   </style>
 <body>
-
-  
-
-
   <div class="accordion">
     <div class="image-box">
       <img src="{{ url_for ('static', filename='mainImg.png')}}" alt="">
@@ -346,7 +336,6 @@ body {
     </div>
   </div>
 
- 
   <script>
     let li = document.querySelectorAll(".faq-text li");
     for (var i = 0; i < li.length; i++) {

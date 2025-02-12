@@ -112,8 +112,6 @@ body {
     margin-bottom: 20px;
 }
 
-    
-
 /* Register Button Styling */
 .cta-button {
     display: inline-flex;
@@ -728,7 +726,7 @@ footer {
     .footer-left {
         max-width: 100%;
     }
-}
+}u
 
 @media (max-width: 823px) {
     
