@@ -7,6 +7,7 @@
     <meta name="description" content="Join our exciting hackathon and collaborate with the best minds. Register now!">
     <title>Hackathon Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 </head>
 
@@ -22,14 +23,14 @@
                 <div class="logo-text" style="display: flex; flex-direction: column;">
                     <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
                     <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
-                    <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
+                    <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: #8A0000;">An Autonomous Institute</span>
                     <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
                     <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
                 </div>
             </li>
             <input type='checkbox' id='check' />
             <span class="menu">
-                <li><a href="{{ url_for ('index')}}">Home</a></li>
+                <li><a class="gradient-text" href="{{ url_for ('index')}}">Home</a></li>
                 <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
                 <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
                 <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
@@ -41,7 +42,7 @@
     </nav>
 </header>
 
-<header id="home">
+<header id="home" >
     <div class="hero">
         <div class="hero-content">
             <p>Innovate, Code, Win!</p>
@@ -57,21 +58,43 @@
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>~About~</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Our college has a rich tradition of fostering innovation through hackathons. The annual event brings together bright minds from around the world to create groundbreaking solutions.</p>
-                    <p>The hackathon offers a platform to innovate, network, and grow while tackling global challenges.</p>
-                </div>
-                <img src="{{url_for('static', filename='pec.jpg')}}" alt="College Campus" class="about-img">
+<section id="about">
+    <div class="container">
+        <h2>~About~</h2>
+
+        <!-- About College -->
+        <div class="about-content">
+            <div class="about-text" style="margin-left: 10px;">
+                <h3>About Our College</h3>
+                <p style="text-align: justify;">Panimalar Engineering College is a premier institution committed to academic excellence and innovation. Our college provides state-of-the-art infrastructure, world-class faculty, and a dynamic learning environment.We emphasize holistic development, equipping students with technical skills, research exposure, and industry-relevant knowledge.</p>
             </div>
+            <img src="{{ url_for('static', filename='pec.jpg') }}" alt="College Campus" class="about-img">
         </div>
-    </section>
+
+        <!-- About EEE Department -->
+        <div class="about-content reverse">
+            
+            <div class="about-text" >
+                <h3>About EEE Department</h3>
+                <p style="text-align: justify;">The Department of Electrical and Electronics Engineering (EEE) at Panimalar Engineering College is dedicated to innovation and excellence in electrical sciences.With advanced laboratories, experienced faculty, and industry collaborations, our department nurtures students to become leaders in power systems, automation, and sustainable energy solutions.</p>
+            </div>
+            <img src="{{ url_for('static', filename='pec.jpg') }}" alt="EEE Department" class="about-img">
+        </div>
+
+        <!-- About Hackathon -->
+        <div class="about-content">
+            <div class="about-text" style="margin-left: 10px;">
+                <h3>About the Hackathon</h3>
+                <p style="text-align: justify;">Our annual hackathon is a premier event where bright minds collaborate to solve real-world challenges through technology and innovation.Participants get the opportunity to work with mentors, develop cutting-edge solutions, and compete for exciting rewards, fostering creativity and technical excellence.</p>
+            </div>
+            <img src="{{ url_for('static', filename='pec.jpg') }}" alt="Hackathon Event" class="about-img">
+        </div>
+    </div>
+</section>
+
 
     <!-- Benefits Section -->
-    <section id="benefits">
+    <section id="benefits" >
         <div class="container">
             <h2>~Benefits~</h2>
             <div class="benefits-cards">
@@ -130,7 +153,7 @@
             </div>
 
             <!-- Co-Patrons -->
-            <div class="team-category">
+            <div class="team-category" >
                 <h3>Co-Patrons</h3>
                 <div class="team-profiles">
                     <div class="team-member">
@@ -142,7 +165,7 @@
             </div>
 
             <!-- Conveners -->
-            <div class="team-category">
+            <div class="team-category" >
                 <h3>Converners</h3>
                 <div class="team-profiles">
                     <div class="team-member">
@@ -179,7 +202,7 @@
         </div>
     </section>
 
-    <section class="section timeline" style="background-color: white;">
+    <section class="section timeline" >
         <h2 class="timeline-heading">Hackathon Timeline</h2>
         <div class="timeline-container">
             <!-- Timeline Item 1 -->
@@ -232,7 +255,7 @@
     
 
     <!-- Countdown Timer Section -->
-    <section id="countdown" style="margin-top: 20px;">
+    <section id="countdown" style="margin-top: 20px;" >
         <div class="container">
             <h2 style="text-align: center;">~Countdown to Hackathon~</h2>
             <div id="timer"></div>
@@ -245,7 +268,7 @@
     </section>
     
     <!-- Footer -->
-    <footer>
+    <footer >
         <div class="footer-overlay">
             <div class="footer-content">
                 <div class="footer-left">
@@ -285,7 +308,18 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script>
+
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".nav-bar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
 
 function fillCircles() {
     const items = document.querySelectorAll('.timeline-item');
@@ -342,6 +376,8 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
 });
+
+
     </script>
 </body>
 

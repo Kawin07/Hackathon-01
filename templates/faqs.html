@@ -1,35 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Responsive FAQ Accordion </title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Body and General Styling */
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: white;
-  padding: 0; /* Removed padding */
-  margin: 0; /* Removed margin */
+  margin: 0 !important;
+  padding: 0 !important;
+    /* font-family: "Poppins", sans-serif; */
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    --color1: #FFF ;
+    --color2: #181818 ;
 }
+
+/* Navbar Styling */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    /* position: fixed; */
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.menu {
+    position: relative;
+    display: flex;
+    z-index: 9999;
+}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 43px;
+    right: 30px;
+}
+#check {display: none;}
 
 ::selection {
   background: #7d2ae8;
@@ -143,7 +217,9 @@ body {
   font-size: 20px;
   color: #595959;
   transition: all 0.3s ease;
+  display: inline-block; /* Ensure it's displayed properly */
 }
+
 
 .accordion-text li.showAnswer .question-arrow .arrow {
   transform: rotate(-180deg);
@@ -229,146 +305,275 @@ body {
     width: 98%;
   }
 }
+
+
+@media (max-width: 823px) {
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        opacity: .9;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;  
+        z-index: 9999;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
   </style>
+
 <body>
-  <div class="accordion">
-    <div class="image-box">
-      <img src="{{ url_for ('static', filename='mainImg.png')}}" alt="">
-    </div>
-    <div class="accordion-text">
-      <div class="title" style="text-align: center;">FAQ</div>
-      
-      <!-- Category Buttons -->
-      <div class="category-buttons">
-        <button class="category-btn" onclick="toggleCategory('category1')">HTML & CSS</button>
-        <button class="category-btn" onclick="toggleCategory('category2')">JavaScript</button>
-        <button class="category-btn" onclick="toggleCategory('category3')">Tools</button>
-        <button class="category-btn" onclick="toggleCategory('category4')">Design</button>
-        <button class="category-btn" style="text-align: center;" onclick="toggleCategory('category5')">Development</button>
-      </div>
-      
-      <!-- HTML & CSS Category -->
-      <div class="faq-category" id="category1">
-        <ul class="faq-text">
-          <li>
-            <div class="question-arrow">
-              <span class="question">What do you mean by HTML & CSS?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
-            <span class="line"></span>
-          </li>
-          <li>
-            <div class="question-arrow">
-              <span class="question">From where you learned HTML & CSS?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
-            <span class="line"></span>
-          </li>
+  <header>
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo' style="display: flex;">
+                <a href='#'>
+                    <img style="width: 80px; height: auto;" src="{{ url_for ('static', filename='logo1.png')}}" />
+                </a>
+                <div class="logo-text" style="display: flex; flex-direction: column;">
+                    <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
+                    <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
+                    <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
+                    <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
+                    <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
+                </div>
+            </li>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="{{ url_for ('index')}}">Home</a></li>
+                <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
+                <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
+                <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
+                <li><a href="{{ url_for('contactus')}}">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
-      </div>
+    </nav>
+</header>
 
-      <!-- JavaScript Category -->
-      <div class="faq-category" id="category2" style="display:none;">
-        <ul class="faq-text">
-          <li>
-            <div class="question-arrow">
-              <span class="question">What do you mean by JavaScript?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</p>
-            <span class="line"></span>
-          </li>
-        </ul>
-      </div>
 
-      <!-- Tools Category -->
-      <div class="faq-category" id="category3" style="display:none;">
-        <ul class="faq-text">
-          <li>
-            <div class="question-arrow">
-              <span class="question">Which code editor do you use?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
-            <span class="line"></span>
-          </li>
-          <li>
-            <div class="question-arrow">
-              <span class="question">Software you use for video editing?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
-            <span class="line"></span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Design Category -->
-      <div class="faq-category" id="category4" style="display:none;">
-        <ul class="faq-text">
-          <li>
-            <div class="question-arrow">
-              <span class="question">What is Design Thinking?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>Design thinking is a methodology used to solve complex problems by understanding the user, challenging assumptions, and redefining problems in an attempt to identify alternative strategies.</p>
-            <span class="line"></span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Development Category -->
-      <div class="faq-category" id="category5" style="display:none;">
-        <ul class="faq-text">
-          <li>
-            <div class="question-arrow">
-              <span class="question">What is Full-stack development?</span>
-              <i class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <p>Full-stack development refers to the development of both the front-end (user interface) and back-end (server-side logic) of a web application.</p>
-            <span class="line"></span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
+<div class="accordion">
+  <div class="image-box">
+    <img src="{{ url_for ('static', filename='mainImg.png')}}" alt="">
   </div>
+  <div class="accordion-text">
+    <div class="title" style="text-align: center;">FAQ</div>
+    
+    <!-- Category Buttons -->
+    <div class="category-buttons">
+      <button class="category-btn active" onclick="toggleCategory('category1')">HTML & CSS</button>
+      <button class="category-btn" onclick="toggleCategory('category2')">JavaScript</button>
+      <button class="category-btn" onclick="toggleCategory('category3')">Tools</button>
+      <button class="category-btn" onclick="toggleCategory('category4')">Design</button>
+      <button class="category-btn" style="text-align: center;" onclick="toggleCategory('category5')">Development</button>
+    </div>
+    
+    <!-- HTML & CSS Category -->
+    <div class="faq-category" id="category1">
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">What do you mean by HTML & CSS?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">From where you learned HTML & CSS?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+    </div>
 
-  <script>
-    let li = document.querySelectorAll(".faq-text li");
-    for (var i = 0; i < li.length; i++) {
-      li[i].addEventListener("click", (e) => {
-        let clickedLi;
-        if (e.target.classList.contains("question-arrow")) {
-          clickedLi = e.target.parentElement;
-        } else {
-          clickedLi = e.target.parentElement.parentElement;
-        }
-        clickedLi.classList.toggle("showAnswer");
-      });
+    <!-- JavaScript Category -->
+    <div class="faq-category" id="category2" style="display:none;">
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">What do you mean by JavaScript?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tools Category -->
+    <div class="faq-category" id="category3" style="display:none;">
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">Which code editor do you use?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">Software you use for video editing?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Design Category -->
+    <div class="faq-category" id="category4" style="display:none;">
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Design Thinking?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Design thinking is a methodology used to solve complex problems by understanding the user, challenging assumptions, and redefining problems in an attempt to identify alternative strategies.</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Development Category -->
+    <div class="faq-category" id="category5" style="display:none;">
+      <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Full-stack development?</span>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <p>Full-stack development refers to the development of both the front-end (user interface) and back-end (server-side logic) of a web application.</p>
+          <span class="line"></span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-overlay">
+      <div class="footer-content">
+          <div class="footer-left">
+              <img src="{{ url_for('static', filename='logo1.png') }}" alt="College Logo" class="college-logo">
+              <h3>PANIMALAR ENGINEERING COLLEGE</h3>
+              <p>An Autonomous Institution, affiliated to Anna University</p>
+              <p>Bangalore Trunk Road, Poonamallee,<br>Chennai 600 123.</p>
+          </div>
+
+          <div class="footer-right">
+              <p>Contact us using</p>
+              <p>
+                  <span class="icon">📞</span> 044 -26490404 <br>
+                  <span class="icon">✉</span> <a href="mailto:peccsehackathon@gmail.com">peceehack@gmail.com</a>
+              </p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>Designed and Developed by <a href="#">Thalapathy & Team</a></p>
+          <p>Follow us on</p>
+          <div class="card">
+              <a class="social-link1" href="#" title="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"></path></svg>
+              </a>
+              <a class="social-link2" href="#" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+              </a>
+              <a class="social-link3" href="#" title="WhatsApp">
+                  <svg viewBox="0 0 16 16" class="bi bi-whatsapp" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> <path fill="white" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
+              </a>
+              <a class="social-link4" href="#" title="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+              </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<script>
+ let li = document.querySelectorAll(".faq-text li");
+for (var i = 0; i < li.length; i++) {
+  li[i].addEventListener("click", (e) => {
+    let clickedLi;
+    if (e.target.classList.contains("question-arrow")) {
+      clickedLi = e.target.parentElement;
+    } else {
+      clickedLi = e.target.parentElement.parentElement;
     }
 
-    function toggleCategory(categoryId) {
-      const categories = document.querySelectorAll('.faq-category');
-      categories.forEach(category => {
-        category.style.display = 'none';
-      });
+    clickedLi.classList.toggle("showAnswer");
 
-      const selectedCategory = document.getElementById(categoryId);
-      if (selectedCategory) {
-        selectedCategory.style.display = 'block';
-      }
-
-      // Add underline to the active button
-      const buttons = document.querySelectorAll('.category-btn');
-      buttons.forEach(button => {
-        button.classList.remove('active');
-      });
-      document.querySelector(`button[onclick="toggleCategory('${categoryId}')"]`).classList.add('active');
+    // Rotate the arrow
+    let arrow = clickedLi.querySelector(".arrow");
+    if (clickedLi.classList.contains("showAnswer")) {
+      arrow.style.transform = "rotate(-180deg)";
+    } else {
+      arrow.style.transform = "rotate(0deg)";
     }
-  </script>
+  });
+}
+
+
+// Function to set the active category on page load
+window.addEventListener('DOMContentLoaded', function() {
+  // Activate the first category by default
+  toggleCategory('category1');
+});
+
+// Function to toggle categories
+function toggleCategory(categoryId) {
+  const categories = document.querySelectorAll('.faq-category');
+  categories.forEach(category => {
+    category.style.display = 'none';
+  });
+
+  const selectedCategory = document.getElementById(categoryId);
+  if (selectedCategory) {
+    selectedCategory.style.display = 'block';
+  }
+
+  // Add underline to the active button
+  const buttons = document.querySelectorAll('.category-btn');
+  buttons.forEach(button => {
+    button.classList.remove('active');
+  });
+  document.querySelector(`button[onclick="toggleCategory('${categoryId}')"]`).classList.add('active');
+}
+
+
+</script>
+
 
 </body>
 </html>

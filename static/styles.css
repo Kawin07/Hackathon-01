@@ -24,13 +24,24 @@ body {
 /* Navbar Styling */
 .nav-bar {
     width: 100%;
+    position: absolute; /* Initially above the banner */
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    position: sticky;
-    background-color: var(--color2);
+    background-color: transparent; /* Initially transparent */
     padding: 12px 20px;
+    z-index: 1000; /* Ensure navbar stays above other elements */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, position 0.3s ease;
+}
+
+/* Change to fixed position when scrolling */
+.nav-bar.scrolled {
+    position: fixed; /* Stick to top when scrolling */
+    background-color: var(--color2); /* Add background when scrolled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
 }
 
 .logo-container {
@@ -40,7 +51,7 @@ body {
 }
 
 .logo-img {
-    width: 80px; /* Adjust the size of the logo */
+    width: 80px;
     height: auto;
     margin-right: 15px;
 }
@@ -51,12 +62,17 @@ body {
     color: white;
     text-transform: uppercase;
 }
+
 .menu {
     position: relative;
     display: flex;
     z-index: 200;
 }
-.menu li {padding-left: 30px;}
+
+.menu li {
+    padding-left: 30px;
+}
+
 .menu li a {
     display: inline-block;
     text-decoration: none;
@@ -66,6 +82,8 @@ body {
     position: relative;
     text-transform: uppercase;
 }
+
+
 .menu li a::after {
     content: "";
     position: absolute;
@@ -76,30 +94,42 @@ body {
     background-color: var(--color1);
     transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu,
+.close-menu {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
 }
+
 .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
+
 .close-menu {
     top: 43px;
     right: 30px;
 }
-#check {display: none;}
+
+#check {
+    display: none;
+}
+
 
 /* Hero Section */
 .hero {
-    background: url("../static/banner.jpg");
-    background-size: cover;
-    height: 120vh;
+    /* background: url("../static/banner.jpg") no-repeat center center/cover; */
+    background-color: black;
+    position: relative; /* Ensure proper layering */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,6 +141,8 @@ body {
     font-size: 3.5em;
     margin-bottom: 20px;
 }
+
+    
 
 /* Register Button Styling */
 .cta-button {
@@ -195,6 +227,8 @@ body {
     align-items: center;
 }
 
+
+
 .about-text {
     flex: 1;
     padding-right: 30px;
@@ -204,6 +238,9 @@ body {
     width: 400px;
     height: auto;
     border-radius: 8px;
+}
+.about-content:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 /* Benefits Section */
@@ -456,6 +493,10 @@ h2 {
 
 
 /* Countdown Timer */
+#countdown {
+    background-color: white;
+}
+
 #timer {
     text-align: center;
     font-size: 48px;
@@ -726,7 +767,7 @@ footer {
     .footer-left {
         max-width: 100%;
     }
-}u
+}
 
 @media (max-width: 823px) {
     

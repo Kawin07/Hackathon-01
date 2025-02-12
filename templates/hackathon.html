@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='cstyles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='cstyles.css') }}">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
     <style>
         /* Basic Reset */
         * {
@@ -17,149 +20,89 @@
 
         /* Body and General Styling */
         body {
+            font-family: 'Arial', sans-serif;
             background-color: #f7f7f7;
             color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            background: #0d253f;
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative; /* Ensure positioning context */
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .logo-img {
-            width: 80px; /* Adjust the size of the logo */
-            height: auto;
-            margin-right: 15px;
-        }
-
-        .logo-text {
-            font-size: 10px;
-            font-weight: bold;
-            color: white;
-            text-transform: uppercase;
-        }
-
-        /* Navigation Links */
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-links li {
-            margin: 0 15px;
-            position: relative; /* Add position relative for the pseudo-element */
-        }
-
-        .nav-links a {
-            color: white;
-            text-transform: uppercase;
-            font-weight: 500;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            position: relative; /* Ensure the pseudo-element aligns correctly */
-        }
-
-        /* Line Animation on Hover */
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px; /* Adjust distance of line from text */
-            left: 0;
-            width: 0%;
-            height: 2px; /* Line thickness */
-            background-color: #B2E4D6; /* Line color */
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%; /* Full width on hover */
-        }
-
-        .nav-links a:hover {
-            color: #B2E4D6; /* Change text color on hover */
-        }
-
-        /* Hamburger Menu */
-        .hamburger {
-            display: none; /* Hidden by default */
-            flex-direction: column;
-            cursor: pointer;
-            z-index: 1001;
-            margin-right: 10px; /* Ensure it is above other elements */
-        }
-
-        .hamburger span {
-            height: 3px;
-            width: 25px;
-            background: white;
-            margin: 3px 0;
-            transition: all 0.3s ease; /* Smooth transition for animation */
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none; /* Hide nav links by default */
-                flex-direction: column;
-                width: 100%;
-                background: #0d253f;
-                position: absolute;
-                top: 100px; /* Position below the navbar */
-                left: 0;
-                z-index: 999;
-                align-items: center;
-                margin-bottom: 10px;
-            }
-            .coordinator-info {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .coordinator {
-            width: 100%;
-            margin: 10px 0px;
-        }
-
-            .nav-links.active {
-                display: flex;
-                 /* Show nav links when active */
-            }
-
-            .hamburger {
-                display: flex; /* Show hamburger icon */
-            }
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0px;
             text-align: center;
+            line-height: 1.6;
+            --color1: #FFF ;
+            --color2: #181818 ;
         }
+
+        .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: sticky;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+.menu {
+    position: relative;
+    display: flex;
+    z-index: 200;
+}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 43px;
+    right: 30px;
+}
+#check {display: none;}
+
+
         h2 {
             color: #333;
         }
@@ -352,38 +295,74 @@
             }
         }
 
-        /* Other styles remain unchanged... */
+        @media (max-width: 823px) {
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        opacity: .9;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;  
+        z-index: 9999;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!-- Logo Section -->
-            <a href="#home" class="logo-container">
-                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Hackathon Logo" class="logo-img">
-                <div class="logo-text" style="display: flex; flex-direction: column;">
-                    <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
-                    <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
-                    <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
-                    <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
-                    <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
-                </div>
-            </a>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="{{ url_for ('index')}}">Home</a></li>
-                <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
-                <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
-                <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
-                <li><a href="{{ url_for('contactus')}}">Contact</a></li>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo' style="display: flex;">
+                    <a href='#'>
+                        <img style="width: 80px; height: auto;" src="{{ url_for ('static', filename='logo1.png')}}" />
+                    </a>
+                    <div class="logo-text" style="display: flex; flex-direction: column;">
+                        <span class="logo-text-1" style="font-size: 27px; letter-spacing: 5px; line-height: 30px;">PANIMALAR</span>
+                        <span class="logo-text-2" style="font-size:14px; letter-spacing: 2px; word-spacing: -4px;">ENGINEERING COLLEGE</span>
+                        <span class="logo-text-3" style="text-align: center; padding-right: 10px; background-color: red;">An Autonomous Institute</span>
+                        <span class="logo-text-4" style="font-size: 9px;">Affiliated To Anna University, Chennai</span>
+                        <span class="logo-text-5" style="text-align: center;">(JAISAKTHI EDUCATIONAL TRUST)</span>
+                    </div>
+                </li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="{{ url_for ('index')}}">Home</a></li>
+                    <li><a href="{{ url_for ('guidelines')}}">Guidelines</a></li>
+                    <li><a href="{{ url_for ('hackathon')}}">Statements</a></li>
+                    <li><a href="{{ url_for ('faqs')}}">FAQs</a></li>
+                    <li><a href="{{ url_for('contactus')}}">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Contact Section -->
     <div class="container">
