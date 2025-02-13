@@ -3,14 +3,15 @@
 
  {
   "Category, and a detailed Description for 20 problem statements.": 1,
-  "Column2": "Smart Traffic Management System",
-  "Column3": "Smart Cities",
-  "Column4": "Urban Mobility",
-  "Column5": "Hardware + Software",
-  "Column6": "Background: Traffic congestion leads to delays, pollution, and inefficiency in cities."
+  "Column2": "PsNo:001",
+  "Column3": "Smart Traffic Management System",
+  "Column4": "Smart Cities",
+  "Column5": "Urban Mobility",
+  "Column6": "Hardware + Software",
+  "Column7": "Background: Traffic congestion leads to delays, pollution, and inefficiency in cities."
  },
  {
-  "Column6": "Expected Solution: Develop an AI-powered IoT system integrating real-time traffic analytics, vehicle detection, and automated signal control. The system should prioritize emergency vehicles and dynamically adjust signal timings."
+  "Column7": "Expected Solution: Develop an AI-powered IoT system integrating real-time traffic analytics, vehicle detection, and automated signal control. The system should prioritize emergency vehicles and dynamically adjust signal timings."
  },
  {
   "Category, and a detailed Description for 20 problem statements.": 2,

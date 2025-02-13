@@ -72,10 +72,6 @@ def guidelines():
 
 @app.route('/hackathon')
 def hackathon():
-    # Get the page number from request arguments, default is 1
-    page = request.args.get('page', 1, type=int)
-    per_page = 20  # Number of problem statements per page
-    
     # Read the JSON file
     try:
         with open('static/ps.json', 'r') as file:
@@ -85,20 +81,12 @@ def hackathon():
         problems = []
         print(f'Error loading JSON: {e}')
     
-    total_problems = len(problems)
-    start = (page - 1) * per_page
-    end = start + per_page
-    paginated_problems = problems[start:end]
-    
     # Pass domains, themes, and categories to the template
     return render_template(
         'hackathon.html', 
-        problems=paginated_problems, 
-        page=page, 
-        total_problems=total_problems, 
-        per_page=per_page,
-        domains=domains,  # Pass domains to the template
-        themes=themes,    # Pass themes to the template
+        problems=problems,  # Pass all problems at once
+        domains=domains,    # Pass domains to the template
+        themes=themes,      # Pass themes to the template
         categories=categories  # Pass categories to the template
     )
 
