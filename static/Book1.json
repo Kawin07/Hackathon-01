@@ -1,0 +1,258 @@
+{
+"Sheet1":[
+ {
+  "Column1": "PEC OO1",
+  "Title": "Smart Time table generator",
+  "Domain": "Education, AI\/ML, Automation",
+  "Theme": "Algorithmic auto management system",
+  "Category": "Software",
+  "Problem Description:": "Educational institutions face challenges in manually generating timetables that accommodate various constraints such as faculty availability, subject requirements, and classroom allocation. This project aims to develop an intelligent Smart Timetable Generator that automates timetable generation and modification while ensuring optimal workload distribution.\n\nThe system should:\n\nGenerate an initial timetable without any clashes, ensuring that:\nEach class gets scheduled subjects and lab sessions properly.\nFaculty schedules are assigned efficiently.\nStaff members do not have continuous back-to-back classes whenever possible.\nClasses are evenly distributed across the week to balance workload.\nEnable modifications dynamically:\nIf an administrator modifies the timetable (e.g., swapping a subject, rescheduling a class), the system should automatically update the class timetable and the corresponding staff timetable.\nIf modifications cause conflicts (e.g., two subjects assigned to the same teacher at the same time), the system should provide warnings and suggest alternative solutions.",
+  "Expected solution": "Automated timetable generation based on predefined constraints (faculty availability, workload distribution, subject distribution, lab hours, etc.).\nSmart conflict resolution when manual modifications are made.\nReal-time validation of changes to prevent scheduling errors.\nUser-friendly interface for administrators to edit schedules, view timetables, and generate reports."
+ },
+ {
+  "Column1": "PEC OO2",
+  "Title": "Smart Attendance Management System",
+  "Domain": "Education, Automation, Data Management, Communication",
+  "Theme": "AI-driven Attendance Tracking & Notification System",
+  "Category": "Software",
+  "Problem Description:": "Traditional attendance management is time-consuming, error-prone, and lacks real-time monitoring. This project aims to develop a Smart Attendance Management System that automates attendance tracking, maintains student attendance records, and integrates real-time notifications via Telegram for students, mentors, and administrators.\n\nThe system should:\n\nEfficiently record attendance:\n\nFaculty can input absentees by entering roll numbers.\nThe system updates the database automatically for that day (present\/absent status).\nThe database maintains year-wise student records with attendance logs for each day.\nAutomate Cumulative Attendance Calculation:\n\nThe system computes total presents and absents for each student.\nIf a student's cumulative absences exceed a predefined threshold, a warning notification is triggered.\nReal-time Telegram Notifications:\n\nStudents: Receive an alert mentioning their absence for the day and their total absences.\nMentors: Receive a daily list of their students who were absent.",
+  "Expected solution": "\"Automated attendance recording with an easy-to-use interface.\nLive Telegram alerts for students and mentors.\nThreshold-based warnings for students exceeding absentee limits.\nDatabase management with year-wise records and attendance history.\nReports & analytics for administrators and faculty.\""
+ },
+ {
+  "Column1": "PEC OO3",
+  "Title": "Component Issue & Return Management System",
+  "Domain": "Education, Inventory Management, Automation",
+  "Theme": "Smart Lab & Library Resource Management",
+  "Category": "Software",
+  "Problem Description:": "Engineering students frequently borrow electronic and mechanical components for lab experiments, project work, and research. Managing these components manually leads to misplaced records, overdue returns, and resource shortages. This project aims to develop an automated Component Issue & Return Management System to track borrowed components, their return dates, and overdue items while integrating real-time notifications via Telegram.\n\nThe system should:\n\nMonitor Borrowed Components:\n\nStudents can request components from the departmental lab or library.\nThe administrator can approve or deny requests.\nStudents with a permission letter can upload it for verification.\nTrack Return Deadlines:\n\nThe system records issue & return dates for each component.\nAdministrators can view pending returns and overdue items easily.\nIf a student fails to return a component by the due date, they receive a Telegram reminder.\nAdministrator Control & Oversight:\n\nThe admin can add, update, or remove components from the system.\nA dashboard displays all borrowed items, overdue components, and student records.\nThe system allows real-time search & filtering for quick access to component status.",
+  "Expected solution": "Automated tracking of issued & returned components.\nStudent request management with admin approval\/denial.\nPermission letter upload option for students.\nReal-time Telegram notifications for overdue components.\nAdministrator dashboard for monitoring borrowed items.\nMulti-lab & departmental integration for centralized management."
+ },
+ {
+  "Column1": "PEC OO4",
+  "Title": "AI-Powered Attendance Digitization System",
+  "Domain": "Education, Computer Vision, Automation",
+  "Theme": "AI & Image Processing for Smart Attendance Management",
+  "Category": "Software",
+  "Problem Description:": "Traditional attendance tracking in many institutions involves faculty manually writing absentees' roll numbers in tables, making it time-consuming, error-prone, and difficult to digitize. This project aims to develop an AI-powered Mobile Application that can capture images of handwritten absentee lists, extract roll numbers using OCR (Optical Character Recognition), and automatically update the attendance database while sending real-time notifications via Telegram.\n\nThe system should:\n\nDigitize Absentee Records Using Image Processing:\n\nFaculty takes a photo of the handwritten absentee list from the attendance register.\nThe app extracts roll numbers using OCR technology.\nThe extracted data is validated and stored in the attendance database.\nAutomate Attendance Processing:\n\nThe system updates the database with present\/absent status.\nIt maintains year-wise student records with historical attendance logs.\nCumulative attendance is calculated automatically for each student.\nReal-time Telegram Notifications:\n\nStudents: Receive a notification about their absence and total absentee count.\nMentors: Receive a daily list of their absent students.\nIf a student’s cumulative absence exceeds a predefined threshold, they receive a warning notification.",
+  "Expected solution": "OCR-based handwritten text recognition to extract roll numbers.\nAutomated attendance marking from captured images.\nLive Telegram notifications for students and mentors.\nThreshold-based absentee warnings with alerts.\nDatabase management with year-wise attendance records.\nReports & analytics for faculty and administrators."
+ },
+ {
+  "Column1": "PEC OO5",
+  "Title": "AI-Based Beard Detection and Discipline Monitoring System",
+  "Domain": "Computer Vision, AI & Image Processing, Automation",
+  "Theme": "AI-Powered Facial Recognition for Discipline Enforcement",
+  "Category": "Software",
+  "Problem Description:": "Maintaining discipline in educational institutions often includes grooming policies, such as requiring students to be clean-shaven. Currently, monitoring compliance is manual and inefficient. This project aims to develop an AI-powered Camera System that automatically classifies students as clean-shaven or not at the campus entrance. If a student has facial hair, the system estimates the beard length and logs it into a disciplinary database. The system also sends real-time alerts via Telegram when students repeatedly violate the grooming rule.\n\nSystem Functionalities:\nReal-Time Beard Detection & Classification:\n\nA camera at the campus entrance captures student facial images.\nA deep learning model classifies whether the student is clean-shaven or bearded.\nIf the student has a beard, the system estimates beard length using depth estimation and facial analysis.\nAttendance & Grooming Violation Logging:\n\nThe system logs the date, time, and beard length into a disciplinary database.\nThe number of non-compliant days is tracked per student.\nGenerates reports for administrators and disciplinary committees.\nReal-time Telegram Notifications:\n\nStudents receive a Telegram message if they enter campus without shaving.\nIf a student violates the rule multiple times, they receive a disciplinary warning.\nAdministrators and mentors receive reports of students with frequent violations.",
+  "Expected solution": "Facial recognition & beard classification using AI models.\nBeard length estimation using depth analysis.\nAutomated logging system for monitoring compliance over time.\nReal-time Telegram notifications for students and administrators.\nData analytics & violation reports for discipline enforcement."
+ },
+ {
+  "Column1": "PEC OO6",
+  "Title": "AI-Based Dress Code Compliance Monitoring System",
+  "Domain": "Computer Vision, AI & Image Processing, Smart Campus Automation",
+  "Theme": "Smart Campus Discipline Monitoring",
+  "Category": "Software",
+  "Problem Description:": "Maintaining dress code discipline in educational institutions is crucial but manual monitoring is inefficient. This project aims to develop an AI-powered Camera System to automatically check if students are wearing formal shoes and have their shirts tucked in at the campus entrance. If a student violates the dress code, the system logs the violation and sends real-time notifications via Telegram.\n\nSystem Functionalities:\nReal-Time Dress Code Compliance Detection:\n\nA camera at the campus entrance captures student images.\nA deep learning model checks if:\nShoes are formal or not (e.g., no sneakers, sandals, slippers).\nShirt is tucked in using image classification techniques.\nAttendance & Dress Code Violation Logging:\n\nThe system logs the date and time of each violation into a disciplinary database.\nTracks the number of violations per student for record-keeping.\nGenerates reports for administrators and discipline committees.\nReal-time Telegram Notifications:\n\nStudents receive a Telegram message if they violate the dress code.\nIf a student repeatedly violates the rule, they receive a disciplinary warning.\nAdministrators and mentors receive reports of students with frequent violations.",
+  "Expected solution": "AI-based dress code detection for shoes and tucked-in shirts.\nAutomated logging system for compliance tracking.\nReal-time Telegram notifications for students and administrators.\nData analytics & violation reports for discipline enforcement."
+ },
+ {
+  "Column1": "PEC OO7",
+  "Title": "AI-Powered Automatic Electrical & Electronics Monthly Magazine",
+  "Domain": "Artificial Intelligence, Web Scraping, Natural Language Processing (NLP), Automation",
+  "Theme": "Automated Knowledge Aggregation & Content Curation for Electrical & Electronics Engineering",
+  "Category": "Software",
+  "Problem Description:": "Keeping up with the latest advancements in Electrical and Electronics Engineering (EEE) is challenging due to the vast amount of scattered information. This project aims to develop an AI-powered automatic magazine system that collects, categorizes, and compiles news, research, and innovations in EEE and generates a monthly digital magazine.\n\nSystem Functionalities:\nAutomated News & Research Collection:\n\nThe system scrapes news articles, research papers, patents, and blogs related to Electrical & Electronics.\nUses NLP-based filtering to remove irrelevant or low-quality sources.\nContent Categorization & Organization:\n\nArticles are categorized under predefined sections such as:\nPower Electronics & Energy Systems\nAutomation & Embedded Systems\nIoT & Smart Grid Technologies\nRobotics & AI in Electronics\nSemiconductors & VLSI Innovations\nNew Patents & Research Highlights\nSummarization and ranking of articles based on relevance and impact.\nAutomated Magazine Generation:\n\nAt the end of each month, the system compiles all categorized articles into a magazine format.\nGenerates a PDF & web-based magazine, including:\nHeadlines & featured articles\nSummaries & research highlights\nInfographics & trend analysis\nOption for text-to-speech (TTS) audio summaries for accessibility.\nUser Subscription & Notifications:\n\nUsers can subscribe via email or Telegram to receive the magazine.\nCustom topic selection for personalized content recommendations.\nTelegram bot sends weekly article highlights.",
+  "Expected solution": "AI-powered web scraping & content curation for Electrical & Electronics.\nAutomated categorization & summarization using NLP.\nMonthly magazine generation in PDF, web, and audio formats.\nSubscription system with email and Telegram notifications.\nPersonalized content filtering for different user interests."
+ },
+ {
+  "Column1": "PEC OO8",
+  "Title": "AI-Powered Automated Evaluation System for Subjective Assessments",
+  "Domain": "Artificial Intelligence, Computer Vision, Natural Language Processing (NLP), Education Technology",
+  "Theme": "Automated Grading & Plagiarism Detection for Subjective Assessments",
+  "Category": "Software",
+  "Problem Description:": "Educational institutes conduct internal assessments that include multiple-choice questions (MCQs) and true\/false (T\/F) questions, which can be automatically graded. However, evaluating fill-in-the-blanks, short answers, and assignments still requires manual effort, leading to delays, inconsistency, and potential biases in grading.\n\nThis project aims to develop an AI-driven automatic evaluation system that can:\n\nExtract handwritten or typed answers from images\/PDF submissions.\nEvaluate subjective answers by comparing them with model answers.\nDetect plagiarism & answer similarities across students.\nAutomatically assign marks and notify students.\nSystem Functionalities:\nHandwritten & Typed Answer Extraction:\n\nStudents submit their answers by uploading scanned images or PDFs of their assignments.\nUses OCR (Optical Character Recognition) to extract text from images.\nConverts handwritten responses into machine-readable text.\nAnswer Evaluation Using NLP & AI:\n\nCompares student responses with model answers using NLP-based similarity scoring.\nUses semantic analysis to understand variations in correct answers.\nAssigns partial marks for near-correct responses.\nHandles fill-in-the-blanks and short answers using context-based matching.\nPlagiarism & Copy Detection:\n\nCompares student answers with peers’ responses to detect copying.\nFlags high similarity responses for manual review.\nUses AI-based paraphrase detection to identify modified copied answers.\nAutomated Marking & Feedback:\n\nAssigns marks based on:\nCorrectness & completeness of the answer.\nGrammar & language coherence (if applicable).\nPlagiarism & uniqueness.\nGenerates feedback for students with improvement suggestions.\nUpdates internal records & sends marks via Telegram\/SMS\/email.",
+  "Expected solution": "OCR-powered handwritten & printed text extraction.\nAI-based answer understanding & evaluation.\nPlagiarism detection among student submissions.\nAuto-marking system with partial credit for near-correct answers.\nInstant feedback & performance analytics for students.\nAutomated mark updates in student records.\nTelegram\/email alerts for marks & feedback."
+ },
+ {
+  "Column1": "PEC OO9",
+  "Title": "AI-Powered Automated Answer Sheet Evaluation & Data Entry System",
+  "Domain": "Computer Vision, Optical Character Recognition (OCR), Artificial Intelligence, Education Technology",
+  "Theme": "Automated Extraction & Validation of Student Exam Scores",
+  "Category": "Software",
+  "Problem Description:": "Manual evaluation of answer sheets is time-consuming, prone to human errors, and requires significant administrative effort. Teachers and examiners often face challenges in accurately recording student scores, ensuring compliance with course outcomes (CO) mapping, and validating total marks. Traditional data entry methods further slow down the process and increase the likelihood of discrepancies in student records.\n\nTo address these issues, an AI-powered automated answer sheet evaluation and data entry system is proposed. This system leverages Computer Vision, Optical Character Recognition (OCR), and Artificial Intelligence (AI) to automate the extraction, validation, and recording of student exam scores.",
+  "Expected solution": "\"OCR-based extraction of student details, marks, and CO mapping.\nAutomated summation & real-time total validation.\nVisual status indicators (Green: Verified, Red: Error).\nFast answer sheet processing with minimal manual effort.\nSeamless integration with academic records & reports.\""
+ },
+ {
+  "Column1": "PEC OO10",
+  "Title": "AI-Powered Certificate Management & Resume Builder",
+  "Domain": "Artificial Intelligence, Optical Character Recognition (OCR), Education Technology",
+  "Theme": "Automated Certificate Management, Resume Generation & Event Recommendation",
+  "Category": "Software",
+  "Problem Description:": "Students and professionals frequently earn certificates from various courses, workshops, and competitions. However, managing these certificates, organizing achievements, and utilizing them effectively in resumes can be challenging. Many struggle with manual data entry, keeping track of certifications, and presenting their qualifications in a structured and appealing way. Additionally, students often find it difficult to identify the most valuable learning opportunities that align with their career goals.\n\nTo solve these challenges, an AI-powered certificate management and resume builder is proposed. This system leverages Artificial Intelligence (AI), Optical Character Recognition (OCR), and Education Technology to automate certificate extraction, resume generation, and personalized event recommendations",
+  "Expected solution": "OCR-based automated certificate data extraction.\nDigital portfolio for students to organize achievements.\nUsefulness ratings to guide students toward valuable events\/courses.\nAI-powered resume generation based on academic & extracurricular data.\nEvent recommendation engine for personalized learning opportunities.\n\n"
+ },
+ {
+  "Column1": "PEC OO11",
+  "Title": "Automated Course & Program Outcome Assessment System",
+  "Domain": "Educational Data Analytics, Outcome-Based Education (OBE), Academic Performance Tracking",
+  "Theme": "Automated Outcome-Based Assessment & Continuous Improvement",
+  "Category": "Software",
+  "Problem Description:": "In outcome-based education (OBE), institutions must evaluate Course Outcomes (CO) and Program Outcomes (PO) to measure the effectiveness of their curriculum. However, manually tracking and analyzing student performance trends over multiple years is time-consuming and prone to errors.\n\nThis project aims to automate the evaluation of course outcomes and program outcomes based on student marks, internal assessments, and university exam results. It should also support historical data tracking and dynamic outcome target adjustments for continuous academic improvement.\n\nSystem Functionalities:\nStudent Marks Entry & CO Calculation\n\nFaculty inputs student marks for each Course Outcome (CO) under internal assessment and university exams.\nThe system calculates average performance per CO for the current year.\nHistorical data is stored to compare with past years' performance.\nProgram Outcome (PO) Computation\n\nAggregates CO attainment from all courses to compute Program Outcome (PO).\nHelps faculty assess whether students are meeting the learning objectives.\nPerformance Comparison with Past Years\n\nRetrieves average student performance from the past 3 years for each CO.\nCalculates the percentage of students scoring above this 3-year average.\nAssigns CO attainment level:\nCO = 3 if more than a set percentage exceed past averages.\nCO = 2 or 1 based on lower thresholds.\nDynamic Outcome Target Adjustment\n\nIf students attain or exceed the CO set level, the system increases the target for the next year.\nEnsures continuous academic improvement and curriculum refinement.\nData Visualization & Reports\n\nGraphical analysis of CO\/PO trends over multiple years.\nGenerates department-wise reports for accreditation bodies (NBA, NAAC).\nHelps faculty identify weak areas and improve teaching methods.\n",
+  "Expected solution": "Automated CO & PO calculation from student marks.\nHistorical performance tracking for data-driven decision-making.\nAdaptive CO target setting for continuous improvement.\nCustomizable reports & dashboards for faculty and administrators.\nAccreditation-ready data visualization for NBA\/NAAC compliance.\n\n"
+ },
+ {
+  "Column1": "PEC OO12",
+  "Title": "AI-Powered Chatbot for Student & Faculty Information Access",
+  "Domain": "Artificial Intelligence, Education Technology, Natural Language Processing (NLP)",
+  "Theme": "Smart Chatbot for Personalized Academic Information Retrieval",
+  "Category": "Software",
+  "Problem Description:": "Educational institutions require efficient and instant access to student academic records, attendance, and performance reports. However, retrieving such information from manual records or administrative systems is time-consuming and inconvenient.\n\nThis project aims to develop an AI-powered chatbot that allows students, mentors, class teachers, and HoDs to access academic data quickly and securely based on their roles.\n\nSystem Functionalities:\nRole-Based Access to Academic Data:\n\nStudents:\n\nCan retrieve their own marks, attendance, and performance trends.\nCan access general statistics like average class marks and pass percentage.\nCannot access other students' personal or academic data.\nMentors:\n\nCan access academic details of their assigned mentees.\nCan track attendance and performance trends of their mentees.\nClass Teachers:\n\nCan access marks, attendance, and overall statistics for students in their class.\nCan compare class-wise academic performance.\nHoD (Head of Department):\n\nHas complete access to all student records.\nCan view student DOB, personal data, academic history, and marks based on various criteria.\nCan analyze department-wide performance trends.\nAI Chatbot Capabilities:\n\nText & Voice-Based Query Handling: Allows users to interact in natural language.\nSecure Authentication: Ensures role-based access to prevent unauthorized data access.\nData Retrieval & Analysis: Fetches and presents data from a secure institutional database.\nInstant Data Accessibility:\n\nStudents and faculty can interact with the chatbot via mobile app, web portal, or Telegram.\nProvides quick responses without needing to navigate complex systems.\nData Privacy & Security:\n\nImplements access control to protect student data.\nUses encryption for secure communication.\n",
+  "Expected solution": "Role-based access control for students, mentors, class teachers, and HoDs.\nText and voice-enabled AI chatbot for seamless interaction.\nSecure database integration to fetch academic details instantly.\nDetailed academic analysis and insights for faculty.\nReal-time access via mobile, web, and Telegram."
+ },
+ {
+  "Column1": "PEC OO13",
+  "Title": "Design of an Autonomous Electric Vehicle Using Fusion 360",
+  "Domain": "Autonomous Vehicles, Electric Mobility, CAD & Simulation",
+  "Theme": "Smart Transportation, Sustainable Mobility, Industry 4.0",
+  "Category": "software",
+  "Problem Description:": "The demand for autonomous electric vehicles (AEVs) is rapidly increasing due to advancements in artificial intelligence, IoT, and sustainable transportation. Designing a functional and manufacturable AEV prototype requires precise 3D modeling, simulation, and optimization to ensure structural integrity, energy efficiency, and sensor integration for navigation.\n\nProblem Definition\nDesign an Autonomous Electric Vehicle (AEV) using Fusion 360 (or equivalent CAD software) that incorporates:\n\nChassis & Body Structure – Lightweight and aerodynamic for efficiency.\nPowertrain & Battery System – Optimized for range and performance.\nSteering & Suspension Mechanism – Suitable for smooth autonomous navigation.\nSensor Integration – Mounting for LiDAR, cameras, ultrasonic sensors, and GPS.\nElectronics & Control System Housing – Secure and ventilated enclosure for microcontrollers, motor controllers, and AI processing units.\nAutonomous Driving Considerations – Space for AI hardware, obstacle avoidance sensors, and vehicle-to-infrastructure (V2I) connectivity.\nChallenges to Address\n✅ Structural Strength vs. Weight Optimization – Ensuring durability without increasing mass.\n✅ Aerodynamic Efficiency – Minimizing drag for improved range.\n✅ Sensor Positioning & Coverage – Optimizing placement for accurate navigation.\n✅ Manufacturability – Designing parts suitable for 3D printing, CNC machining, or sheet metal fabrication.\n✅ Energy Efficiency – Ensuring the battery pack meets operational needs.\n\n",
+  "Expected solution": "A fully detailed Fusion 360 CAD model of an Autonomous Electric Vehicle with:\n🔹 Optimized Chassis, Suspension, and Steering System\n🔹 Battery and Drivetrain Placement\n🔹 Sensor Mounting for Perception Systems\n🔹 Export-ready for Prototyping and Simulation\n\nThe model will be validated using Finite Element Analysis (FEA) for strength and Flow Simulation for aerodynamics. The final design will be ready for prototyping and real-world implementation."
+ },
+ {
+  "Column1": "PEC OO14",
+  "Title": "Secure and Proctored Online Quiz System",
+  "Domain": "Education Technology, AI-based Proctoring, Cybersecurity",
+  "Theme": "Academic Integrity, AI-Powered Examination Monitoring",
+  "Category": "software",
+  "Problem Description:": "With the rise of remote learning, ensuring a fair and secure examination process is a significant challenge. Students often have access to external resources, making it easy to copy answers. This project aims to develop a Secure Online Quiz System that enables students to take exams from home while preventing malpractices using AI-powered proctoring techniques.\n\nSystem Features:\nAI-Based Proctoring:\n\nTracks head movements to detect if students look away from the screen.\nDetects background noise (human voices) to identify unauthorized help.\nUses face recognition to ensure the registered student is taking the test.\nSecure Environment Control:\n\nPrevents students from switching tabs or accessing other applications.\nDisables copy-paste and screen capture.\nPeriodic screenshots and screen recording for invigilation.\nAnomaly Detection in Response Time:\n\nTracks the time taken to answer each question.\nDetects suspicious patterns like answering too quickly (potential pre-knowledge) or too slowly (potential external help).\nFlags irregularities for instructor review.\nAutomated Reporting:\n\nGenerates real-time analytics on student behavior.\nIdentifies suspected cases of malpractice for manual review.\nProvides a confidence score on the authenticity of the student's performance.",
+  "Expected solution": "The system will consist of the following key components:\n1. AI-Based Proctoring\n\nFace Recognition: Uses AI-based facial recognition to verify that the registered student is taking the exam.\nHead Movement Tracking: Detects if a student repeatedly looks away from the screen, which could indicate cheating.\nBackground Noise Detection: Monitors the exam environment for human voices or other suspicious noises to identify unauthorized help.\n\n2. Secure Environment Control\n\nTab & Application Restriction: Prevents students from switching tabs or opening other applications during the exam.\nClipboard and Screenshot Protection: Disables copy-paste functionality and blocks screen capturing tools.\nPeriodic Screen Capturing: Takes screenshots at random intervals and records the screen for later review.\n\n3. Anomaly Detection in Response Time\n\nReal-Time Answer Analysis: Tracks how long students take to answer each question.\nSuspicious Behavior Detection: Flags cases where a student answers too quickly (suggesting prior knowledge) or too slowly (suggesting external assistance).\nAutomated Alerts: Notifies instructors about unusual patterns for manual review.\n\n4. Automated Reporting and Analytics\n\nReal-Time Proctoring Dashboard: Displays live analytics on student activity, including potential red flags.\nBehavior-Based Confidence Score: Uses AI to generate a confidence score on whether a student's performance is authentic.\nDetailed Reports: Provides instructors with detailed logs and flagged incidents for review."
+ },
+ {
+  "Column1": "PEC OO15",
+  "Title": "Piezo-Based Smart Footfall Counter for Real-Time Crowd Monitoring",
+  "Domain": "IoT & Smart Infrastructure",
+  "Theme": "Sustainable and Privacy-Preserving Crowd Analytics",
+  "Category": "Hardware",
+  "Problem Description:": "With the increasing need for smart infrastructure and efficient crowd management, accurately counting foot traffic in various locations—such as malls, stadiums, public transport stations, and offices—is crucial. Traditional footfall counting methods, such as cameras and infrared sensors, face challenges related to privacy concerns, high costs, and environmental factors like lighting conditions.\n\nA Piezo-Based Footfall Counter offers a cost-effective and privacy-friendly solution by utilizing piezoelectric sensors to detect foot pressure and convert it into electrical signals for real-time foot traffic analysis. However, challenges exist in differentiating between multiple footsteps, filtering noise from vibrations, and ensuring accurate data collection in diverse environments.\n\n",
+  "Expected solution": "Uses piezoelectric sensors to detect and count footsteps accurately.\nImplements signal processing algorithms to filter out noise and distinguish individual footsteps.\nUtilizes machine learning or AI models to improve accuracy by differentiating human steps from other vibrations.\nIntegrates real-time data visualization using dashboards or mobile applications.\nSupports wireless data transmission (e.g., IoT integration for cloud-based monitoring).\nEnsures scalability and cost-effectiveness for large-scale implementation."
+ },
+ {
+  "Column1": "PEC OO16",
+  "Title": "Automated Programmable Bell Ringing System for Educational Institutes",
+  "Domain": "Embedded Systems & IoT",
+  "Theme": "Automation in Education",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional bell ringing systems in educational institutes rely on manual operation or outdated mechanical timers, leading to inconsistencies, human errors, and inefficiencies in managing schedules. Schools and colleges require a precise, automated, and programmable system to ensure smooth time management for classes, breaks, and special events.\n\nA Programmable Bell Ringing System can enhance efficiency by automating bell schedules, allowing real-time control, and reducing dependency on manual operations. The system should be flexible, reliable, and user-friendly while accommodating different timetables, holidays, and special event schedules.\n\n",
+  "Expected solution": "Uses a microcontroller (e.g., Arduino, Raspberry Pi, ESP32) to control bell operations.\nFeatures a user-friendly interface (e.g., mobile app, web dashboard, or LCD with keypad) for scheduling bells.\nSupports customizable schedules, including holidays, exam timings, and special events.\nIntegrates RTC (Real-Time Clock) module for accurate timekeeping.\nOffers remote access and cloud-based control for administrators via IoT.\nIncludes emergency override options for manual control when needed.\nProvides power backup solutions to function during power outages."
+ },
+ {
+  "Column1": "PEC OO17",
+  "Title": "Solar-Powered Smart Mobile Charger",
+  "Domain": "Renewable Energy & Embedded Systems",
+  "Theme": "Sustainable and Portable Charging Solutions",
+  "Category": "Hardware",
+  "Problem Description:": "In remote areas, outdoor activities, and emergency situations, access to reliable power sources for charging mobile devices remains a challenge. Conventional power banks rely on pre-charged batteries, while grid electricity is not always available. A Solar-Powered Mobile Charger can provide a sustainable, eco-friendly, and portable solution by utilizing solar energy to charge mobile devices efficiently.\n\nHowever, key challenges include efficient solar energy harvesting, optimal power conversion, energy storage management, and charging speed under varying sunlight conditions.",
+  "Expected solution": "Uses a solar panel to harness sunlight and convert it into electrical energy.\nIncorporates a Maximum Power Point Tracking (MPPT) algorithm to optimize power extraction.\nIncludes a rechargeable battery storage system to enable charging even when sunlight is unavailable.\nProvides USB\/Type-C output ports for compatibility with various devices.\nFeatures smart charging capabilities, such as adaptive current control to prevent overcharging.\nIs designed to be lightweight, portable, and durab"
+ },
+ {
+  "Column1": "PEC OO18",
+  "Title": "Smart Dustbin with Auto Lid for Hygienic Waste Management",
+  "Domain": "IoT & Smart Automation",
+  "Theme": "Sustainable and Hygienic Waste Disposal",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional dustbins require manual contact to open, which poses hygiene risks, especially in public places, hospitals, and homes. Improper waste disposal also leads to overflowing bins, attracting pests and creating unsanitary conditions. A Smart Dustbin with Auto Lid can enhance cleanliness by enabling contactless operation and efficient waste monitoring.\n\nKey challenges include detecting human presence accurately, optimizing power consumption, managing waste levels efficiently, and ensuring durability in different environments.\n\n",
+  "Expected solution": "Uses an ultrasonic or infrared sensor to detect human presence and automatically open the lid.\nCloses the lid after a set time to prevent exposure to waste.\nIncludes a waste level detection system using sensors to alert users when the bin is full.\nIntegrates IoT-based notifications to inform waste management teams.\nIs battery or solar-powered for energy efficiency and portability.\nFeatures an odor control mechanism to maintain hygiene.\nIs designed to be durable, waterproof, and easy to clean."
+ },
+ {
+  "Column1": "PEC OO19",
+  "Title": "Smart BMI Indicator for Health Monitoring",
+  "Domain": "Healthcare",
+  "Theme": "Personalized Health & Fitness Tracking",
+  "Category": "Hardware",
+  "Problem Description:": "With rising concerns about obesity, undernutrition, and overall fitness, individuals need an easy and accurate way to track their Body Mass Index (BMI). Traditional BMI calculation requires manual input of weight and height, which can be inconvenient and prone to errors. A Smart BMI Indicator can automate this process, providing real-time, accurate, and personalized health insights.\n\nKey challenges include accurate weight and height measurement, user-friendly interface, data privacy, and seamless integration with fitness apps.",
+  "Expected solution": "Automatically measures weight and height using a digital scale and ultrasonic\/infrared height sensor.\nCalculates BMI in real-time and categorizes the result (Underweight, Normal, Overweight, Obese).\nDisplays results on an LCD screen or mobile app for easy tracking.\nStores and analyzes BMI trends for long-term health monitoring.\nSyncs with fitness apps or IoT devices (e.g., smartwatches).\nOffers health recommendations based on BMI category."
+ },
+ {
+  "Column1": "PEC OO20",
+  "Title": "AI-Powered Face Tracking Camera for Smart Surveillance and Content Creation",
+  "Domain": "Computer Vision & AI",
+  "Theme": "Automated Object Tracking & Smart Monitoring",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional cameras require manual adjustments to keep a subject in focus, making it challenging for content creators, security systems, and video conferencing applications to track a moving face efficiently. A Face Tracking Camera can automate this process, ensuring that the subject remains centered in the frame, enhancing user experience in areas such as home security, vlogging, online meetings, and autonomous robotics.\n\nKey challenges include real-time face detection and tracking, smooth camera movement, power efficiency, and adaptability to different lighting conditions.",
+  "Expected solution": "Uses AI-powered face detection (OpenCV, TensorFlow, or YOLO) to identify and track faces.\nEmploys a motorized gimbal or servo motors for automatic pan\/tilt motion.\nEnsures real-time processing with low latency for smooth tracking.\nSupports USB, Wi-Fi, or Bluetooth connectivity for remote control and integration.\nProvides mobile app or web-based control for live monitoring and settings adjustment.\nOptimizes battery or power usage for long-term deployment."
+ },
+ {
+  "Column1": "PEC OO21",
+  "Title": "Digital Twin of a Small Motor for Real-time Monitoring and Performance Optimization",
+  "Domain": "Industrial IoT, Smart Manufacturing, Digital Twins",
+  "Theme": "Industry 4.0 & Predictive Maintenance",
+  "Category": "Hardware",
+  "Problem Description:": "In modern industries, motors are essential components in various machinery and automation systems. However, frequent breakdowns due to wear and tear, overheating, or mechanical failures can lead to downtime, increased maintenance costs, and reduced efficiency. Traditional monitoring techniques involve periodic inspections, which are inefficient and fail to predict failures in real time.\n\nThis challenge requires participants to develop a Digital Twin of a small motor that can:\n\nMonitor real-time performance (e.g., RPM, torque, vibration, temperature, power consumption).\nDetect anomalies and predict failures using AI\/ML.\nSimulate and optimize motor efficiency under different operating conditions.\nIntegrate IoT connectivity for remote access and analysis.\nThe solution should be scalable and adaptable for industrial automation, robotics, or predictive maintenance applications.",
+  "Expected solution": "Digital Twin Model:\n\nA virtual representation of a small motor that replicates real-time behavior using sensor data.\nSimulates different conditions and predicts future performance.\nIoT-based Data Acquisition System:\n\nHardware setup with sensors (temperature, vibration, current, voltage).\nConnectivity using MQTT, LoRa, or Wi-Fi for cloud integration.\nAI\/ML-based Predictive Analytics:\n\nTrain a machine learning model to detect abnormal patterns and predict failures.\nDashboard for visualizing motor health status & efficiency.\nCloud & Edge Computing Integration:\n\nData storage in AWS\/Azure\/Google Cloud.\nEdge processing for real-time decision-making.\nUser-friendly Dashboard & Control System:\n\nWeb or mobile-based UI for real-time monitoring.\nAlerts & notifications for preventive maintenance."
+ },
+ {
+  "Column1": "PEC OO22",
+  "Title": "Biometric Fingerprint Door Locking System for Smart Security",
+  "Domain": "IoT, Smart Security, Embedded Systems",
+  "Theme": "Smart Home & Secure Access Control",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional door locking systems using keys or PIN codes are prone to security risks such as key duplication, unauthorized access, and password theft. A biometric fingerprint-based door locking system provides a secure, keyless, and user-friendly alternative.\n\nParticipants must design and develop a smart fingerprint door lock that can:\n\nAuthenticate users using fingerprints with a high level of accuracy.\nStore and manage multiple fingerprints securely.\nEnable remote access and monitoring via a mobile app.\nIntegrate IoT features for smart home automation.\nThe system should be efficient, scalable, and cost-effective for residential, commercial, or industrial applications.",
+  "Expected solution": "Biometric Authentication Module:\n\nFingerprint sensor module (e.g., R305, GT-511C3, or capacitive sensor).\nSecure fingerprint storage & management (EEPROM or cloud).\nDoor Lock Mechanism:\n\nElectromagnetic or servo-motor-controlled lock.\nBattery backup for power failures.\nIoT Integration & Remote Access:\n\nWi-Fi\/Bluetooth-enabled access control via ESP32, Raspberry Pi, or Arduino.\nMobile\/web app to manage access and view logs.\nSecurity Features:\n\nAES encryption for fingerprint data.\nTamper detection with alerts for unauthorized access attempts.\nTime-based access control for restricted entry.\nAI-based Adaptive Learning (Advanced Feature):\n\nMachine learning model to detect fake fingerprints or unauthorized access patterns.\n"
+ },
+ {
+  "Column1": "PEC OO23",
+  "Title": "Smart Sun Tracking Solar Panel for Maximum Energy Efficiency",
+  "Domain": "Renewable Energy, IoT, Embedded Systems, Automation",
+  "Theme": "Sustainable Energy & Smart Grid Solutions",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional fixed solar panels do not maximize energy generation as they only capture sunlight at optimal angles for a short period. A sun-tracking solar panel can automatically adjust its position to follow the sun’s movement, increasing energy output by 25-40% compared to fixed panels.\n\nParticipants must design and develop an automated dual-axis or single-axis sun-tracking solar panel that:\n\nDynamically adjusts its angle to follow the sun.\nOptimizes solar energy capture throughout the day.\nUses IoT-based remote monitoring for performance tracking.\nIncludes an energy storage system to store excess power.\nThe system should be efficient, low-cost, and scalable for use in residential, industrial, or agricultural settings.",
+  "Expected solution": "Automated Sun Tracking Mechanism:\n\nLight-dependent resistors (LDRs) or camera-based tracking to detect sunlight.\nServo motors or linear actuators for panel movement.\nSingle-axis (East-West) or dual-axis (East-West & Tilt) tracking.\nPower Generation & Storage:\n\nSolar panel + MPPT (Maximum Power Point Tracking) controller.\nBattery storage system with charge controller.\nIoT-Based Remote Monitoring:\n\nESP32\/Raspberry Pi for data processing.\nMobile\/Web app for real-time monitoring & performance tracking.\nWi-Fi\/Bluetooth\/GSM integration for remote access.\nSmart Optimization & Safety Features:\n\nAI-based prediction of optimal panel angles.\nWind speed detection to prevent damage in storms.\nAuto-reset to a safe position at night or in extreme weather.\n"
+ },
+ {
+  "Column1": "PEC OO24",
+  "Title": "AI-Powered Voice-Controlled Smart Home Automation",
+  "Domain": "IoT, Smart Homes, AI & Voice Recognition",
+  "Theme": "Home Automation & Assistive Technology",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional home automation relies on manual controls or smartphone apps, which may not be accessible for elderly individuals, people with disabilities, or visually impaired users. A voice-controlled home automation system enables seamless hands-free operation of smart devices, improving convenience, security, and energy efficiency.\n\nParticipants must develop a voice-activated home automation system that can:\n\nControl appliances like lights, fans, AC, and door locks.\nUse AI-powered speech recognition for accurate voice commands.\nIntegrate with IoT for real-time control & monitoring.\nEnsure security with user authentication & access control.\nThe system should be cost-effective, scalable, and support multiple languages for broader accessibility.\n\n",
+  "Expected solution": "Voice Recognition & Processing:\n\nUse Google Assistant, Amazon Alexa, or Open-Source Speech Recognition (CMU Sphinx, DeepSpeech, Vosk).\nSupport custom voice commands for personalized automation.\nIoT-Based Smart Device Control:\n\nESP32\/Raspberry Pi with Wi-Fi\/Bluetooth\/Zigbee for IoT integration.\nRelay modules or smart switches for controlling home appliances.\nMobile App & Cloud Connectivity:\n\nAndroid\/iOS app for manual override & real-time status updates.\nCloud-based or MQTT server for remote access & command processing.\nSecurity & Authentication Features:\n\nVoice recognition-based user authentication.\nTwo-factor authentication (PIN, fingerprint) for critical controls like door locks.\nTamper detection & intrusion alerts.\nSmart AI & Automation Features (Advanced):\n\nAI-based predictive automation (e.g., adjusting room temperature based on usage patterns).\nIntegration with sensors (motion, temperature, light) for intelligent decision-making.\nMulti-user support with personalized settings.\n"
+ },
+ {
+  "Column1": "PEC OO25",
+  "Title": "Smart Wind Turbine with AI-Based Efficiency Optimization",
+  "Domain": "Renewable Energy, IoT, AI\/ML, Smart Grids",
+  "Theme": "Sustainable Energy, AI-Driven Performance Optimization, Industry 4.0",
+  "Category": "Hardware",
+  "Problem Description:": "Conventional wind turbines operate at fixed efficiency levels without real-time optimization, leading to energy losses due to changes in wind speed, direction, and environmental factors. This project aims to develop a smart wind turbine that utilizes AI and IoT to optimize blade angle, rotational speed, and power generation dynamically. The system will analyze wind patterns, weather data, and turbine performance to improve efficiency, reduce mechanical stress, and maximize power output.",
+  "Expected solution": "AI-Powered Wind Speed & Direction Prediction (Machine Learning models).\nAutomatic Blade Angle & Rotational Speed Adjustment for maximum efficiency.\nIoT-Based Remote Monitoring & Control via a cloud dashboard.\nEnergy Storage Optimization using battery management systems.\nPredictive Maintenance Alerts (Detects wear & tear on turbine components)."
+ },
+ {
+  "Column1": "PEC OO26",
+  "Title": "Gesture-Controlled Smart Home System",
+  "Domain": "IoT, Smart Homes, AI , gesture recognition & Voice Recognition",
+  "Theme": "Home Automation & Assistive Technology",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional smart home systems rely on voice commands or mobile apps for controlling appliances. However, these methods may not always be convenient, accessible, or intuitive for elderly, disabled, or busy users. This project aims to develop a gesture-controlled smart home system that allows users to control home appliances using hand gestures, providing a seamless and contactless smart home experience.",
+  "Expected solution": "Gesture Recognition Using AI & Computer Vision (Detects hand movements via a camera or sensor).\nSmart Home Appliance Control (Lights, fans, AC, TV, doors, etc.).\nIoT-Based Real-Time Execution (Wi-Fi\/Bluetooth-based control).\nPredefined & Customizable Gestures for user convenience.\nMobile App\/Web Dashboard for remote access & settings customization.\nEnergy-Efficient Automation (Auto-turn off\/on based on presence)."
+ },
+ {
+  "Column1": "PEC OO27",
+  "Title": "AI-Powered Smart Sorting Robotic Arm",
+  "Domain": "Robotics, AI\/ML, Industrial Automation, Smart Manufacturing",
+  "Theme": "Automation, AI-Driven Sorting, Industry 4.0",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional sorting mechanisms in industries and warehouses rely on fixed algorithms and require manual reconfiguration when sorting new items. This project aims to develop an AI-powered robotic arm capable of intelligent sorting based on object type, color, shape, size, and material. Using computer vision and machine learning, the robotic arm can adapt to new objects dynamically, making it useful for recycling plants, warehouses, and assembly lines.",
+  "Expected solution": "AI-Powered Object Detection: Uses camera-based vision (OpenCV, TensorFlow) to recognize objects.\nRobotic Arm with Multiple DOF: Can pick and place objects in categorized bins.\nMachine Learning-Based Sorting Algorithm: Detects object attributes (color, shape, size, material).\nAutomated Conveyor Belt Integration: Can work with a moving belt for continuous sorting.\nIoT Connectivity for Remote Monitoring: Sends real-time data to a dashboard for monitoring"
+ },
+ {
+  "Column1": "PEC OO28",
+  "Title": "Smart Interactive Board Game with Online Multiplayer Mode",
+  "Domain": "Game Technology, IoT, Embedded Systems, AI",
+  "Theme": "Edutainment, Smart Gaming, Interactive Learning",
+  "Category": "Hardware",
+  "Problem Description:": "Traditional board games are fun but lack adaptability and real-time engagement with remote players. This project aims to create an interactive board game that can be played both physically and online, integrating smart sensors, touch interfaces, and IoT connectivity for real-time interaction. Players can connect remotely and play with real-time feedback, lighting effects, and AI-driven hints.",
+  "Expected solution": "A physical smart board with touch sensors, RFID\/NFC tags, or motion tracking to detect moves.\nLEDs and sounds for game interactions and real-time feedback.\nCloud-based multiplayer mode for online gameplay.\nAI-assisted hints and guidance for single-player mode.\nMobile\/Web integration for remote access and live game streaming.\nSpeech recognition and gesture control for an immersive experience."
+ }
+],
+"Sheet2":[],
+"Sheet3":[]
+}

@@ -126,7 +126,7 @@ body {
 
 /* Hero Section */
 .hero {
-    /* background: url("../static/banner.jpg") no-repeat center center/cover; */
+    background: url("../static/banner2.jpeg") no-repeat center center/cover;
     background-color: black;
     position: relative; /* Ensure proper layering */
     height: 100vh;
@@ -239,9 +239,8 @@ body {
     height: auto;
     border-radius: 8px;
 }
-.about-content:nth-child(even) {
-    flex-direction: row-reverse;
-}
+
+
 
 /* Benefits Section */
 #benefits {
@@ -641,6 +640,27 @@ footer {
 }
 .card .social-link4:hover {
     background-color: #1877f2;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.about-text {
+    margin: 0;
+    width: 90%;
+}
+
+.about-img {
+    width: 90%;
+    height: auto;
+}
+
+.reverse {
+    flex-direction: column-reverse;
 }
 
 /* Responsive Styles */

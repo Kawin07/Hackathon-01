@@ -1,15 +1,18 @@
 from flask import Flask, render_template, request, redirect, url_for, json
 from flask_mail import Mail, Message
+import os
+from datetime import datetime
+import pandas as pd
 
 app = Flask(__name__)
 
-# Configure Flask-Mail with your email server settings (use a real SMTP service like Gmail, Mailgun, or SendGrid)
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Or use your email provider
-app.config['MAIL_PORT'] = 587  # For Gmail
+# Flask-Mail Configuration (Update with real credentials)
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'your-email@gmail.com'  # Replace with your email
-app.config['MAIL_PASSWORD'] = 'your-email-password'  # Replace with your email password (or use an App Password)
-app.config['MAIL_DEFAULT_SENDER'] = 'your-email@gmail.com'  # The email to send from
+app.config['MAIL_USERNAME'] = 'your-email@gmail.com'
+app.config['MAIL_PASSWORD'] = 'your-email-password'
+app.config['MAIL_DEFAULT_SENDER'] = 'your-email@gmail.com'
 
 mail = Mail(app)
 
@@ -41,53 +44,71 @@ def index():
 
 @app.route('/contactus', methods=['GET', 'POST'])
 def contactus():
+    file_path = 'static/contact_submissions.xlsx'
+
     if request.method == 'POST':
         name = request.form['name']
+        department = request.form['department']
+        year_section = request.form['year_section']
         email = request.form['email']
         message = request.form['message']
+        date_submitted = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-        # Prepare the email message
-        msg = Message('New Contact Form Submission', recipients=['recipient@example.com'])  # Replace with your recipient's email
-        msg.body = f'Name: {name}\nEmail: {email}\nMessage: {message}'
-        
+        # Check if file exists and is valid
+        if os.path.exists(file_path):
+            try:
+                df = pd.read_excel(file_path, engine='openpyxl')
+            except Exception:
+                print("Error reading the Excel file. Creating a new one.")
+                df = pd.DataFrame(columns=['Date', 'Name', 'Department', 'Year & Section', 'Email', 'Message'])
+        else:
+            df = pd.DataFrame(columns=['Date', 'Name', 'Department', 'Year & Section', 'Email', 'Message'])
+
+        # Append new data
+        new_entry = pd.DataFrame([[date_submitted, name, department, year_section, email, message]], 
+                                 columns=['Date', 'Name', 'Department', 'Year & Section', 'Email', 'Message'])
+        df = pd.concat([df, new_entry], ignore_index=True)
+
+        # Save back to Excel with error handling
         try:
-            # Send the email
-            mail.send(msg)
-            return redirect(url_for('success'))  # Redirect to success page after sending
+            df.to_excel(file_path, index=False, engine='openpyxl')
         except Exception as e:
-            print(f'Error: {e}')
-            return 'There was an error sending your message. Please try again later.'
+            print(f"Error saving the Excel file: {e}")
+
+        return redirect(url_for('success'))  
 
     return render_template('contactus.html')
 
 @app.route('/guidelines')
 def guidelines():
-    # Read the guidelines.txt and pass its contents to the template
     try:
-        with open('static/guidelines.txt', 'r') as file:
+        with open('static/guidelines.txt', 'r', encoding='utf-8') as file:
             guidelines_content = file.read()
-    except Exception as e:
+    except Exception:
         guidelines_content = "Sorry, we couldn't load the guidelines at this time."
+    
     return render_template('guidelines.html', content=guidelines_content)
 
 @app.route('/hackathon')
 def hackathon():
-    # Read the JSON file
     try:
-        with open('static/ps.json', 'r') as file:
+        with open('static/Book1.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
-            problems = data.get("Sheet1", [])  # Extracting the list of problem statements
+            problems = data.get("Sheet1", [])
     except Exception as e:
         problems = []
         print(f'Error loading JSON: {e}')
-    
-    # Pass domains, themes, and categories to the template
+
+    domains = list(set(problem.get("Domain", "N/A") for problem in problems))
+    themes = list(set(problem.get("Theme", "N/A") for problem in problems if "Theme" in problem))
+    categories = list(set(problem.get("Category", "N/A") for problem in problems))
+
     return render_template(
-        'hackathon.html', 
-        problems=problems,  # Pass all problems at once
-        domains=domains,    # Pass domains to the template
-        themes=themes,      # Pass themes to the template
-        categories=categories  # Pass categories to the template
+        'hackathon.html',
+        problems=problems,  
+        domains=domains,
+        themes=themes,
+        categories=categories
     )
 
 @app.route('/faqs')
@@ -96,7 +117,7 @@ def faqs():
 
 @app.route('/success')
 def success():
-    return render_template('success.html')  # Render a success page after form submission
+    return render_template('success.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='cstyles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='cstyles.css') }}">
     <title>Document</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
@@ -459,25 +457,27 @@
                         <th>Theme</th>
                         <th>Category</th>
                         <th>Problem Description</th>
+                        <th>Expected Solutions</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for problem in problems %}
                     <tr>
-                        <td>{{ problem['Category, and a detailed Description for 20 problem statements.'] }}</td>
-                        <td>{{ problem['Column2'] }}</td>
-                        <td>{{ problem['Column3'] }}</td>
-                        <td>{{ problem['Column4'] }}</td>
-                        <td>{{ problem['Column5'] }}</td>
-                        <td>{{ problem['Column6'] }}</td>
-                        <td>{{ problem['Column7'] }}</td>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ problem['Column1'] }}</td>
+                        <td>{{ problem['Title'] }}</td>
+                        <td>{{ problem['Domain'] }}</td>
+                        <td>{{ problem.get('Theme', 'N/A') }}</td>
+                        <td>{{ problem['Category'] }}</td>
+                        <td>{{ problem['Problem Description:'] }}</td>
+                        <td>{{ problem['Expected solution'] }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </div>
+        
     </div>
-
     <!-- Footer -->
     <footer>
         <div class="footer-overlay">
@@ -520,32 +520,40 @@
 
     <script>
         function filterTable() {
-            let searchQuery = document.getElementById("searchBar").value.toLowerCase();
-            let domainFilter = document.getElementById("domainFilter").value.toLowerCase();
-            let themeFilter = document.getElementById("themeFilter").value.toLowerCase();
-            let categoryFilter = document.getElementById("categoryFilter").value.toLowerCase();
+    let searchQuery = document.getElementById("searchBar").value.toLowerCase().trim();
+    let domainFilter = document.getElementById("domainFilter").value.toLowerCase().trim();
+    let themeFilter = document.getElementById("themeFilter").value.toLowerCase().trim();
+    let categoryFilter = document.getElementById("categoryFilter").value.toLowerCase().trim();
 
-            let table = document.getElementById("problemTable");
-            let rows = table.getElementsByTagName("tr");
+    let table = document.getElementById("problemTable");
+    let rows = table.getElementsByTagName("tr");
 
-            for (let i = 1; i < rows.length; i++) {
-                let cells = rows[i].getElementsByTagName("td");
-                let domain = cells[2].innerText.toLowerCase();
-                let theme = cells[3].innerText.toLowerCase();
-                let category = cells[4].innerText.toLowerCase();
-                let rowText = Array.from(cells).map(cell => cell.innerText.toLowerCase()).join(" ");
+    for (let i = 1; i < rows.length; i++) {
+        let cells = rows[i].getElementsByTagName("td");
 
-                // Check if the row matches the filters and search query
-                if (rowText.includes(searchQuery) && 
-                    (domain.includes(domainFilter) || domainFilter === "") &&
-                    (theme.includes(themeFilter) || themeFilter === "") &&
-                    (category.includes(categoryFilter) || categoryFilter === "")) {
-                    rows[i].style.display = "";
-                } else {
-                    rows[i].style.display = "none";
-                }
-            }
-        }
+        if (cells.length < 7) continue; // Skip invalid rows
+
+        let psNo = cells[1].innerText.toLowerCase();
+        let title = cells[2].innerText.toLowerCase();
+        let domain = cells[3].innerText.toLowerCase();
+        let theme = cells[4].innerText.toLowerCase();
+        let category = cells[5].innerText.toLowerCase();
+        let description = cells[6].innerText.toLowerCase();
+        let solutions = cells[7].innerText.toLowerCase();
+
+        let rowText = `${psNo} ${title} ${domain} ${theme} ${category} ${description} ${solutions}`;
+        
+        let searchTerms = searchQuery.split(" ").filter(term => term !== "");
+        let searchMatch = searchTerms.every(term => rowText.includes(term));
+
+        let domainMatch = domainFilter === "" || domain === domainFilter;
+        let themeMatch = themeFilter === "" || theme === themeFilter;
+        let categoryMatch = categoryFilter === "" || category === categoryFilter;
+
+        rows[i].style.display = (searchMatch && domainMatch && themeMatch && categoryMatch) ? "" : "none";
+    }
+}
+
 
         document.addEventListener("DOMContentLoaded", function () {
     const downloadButton = document.querySelector(".button");
@@ -555,10 +563,10 @@
       buttonContent.textContent = "Downloading...";
 
       // Corrected file path: The file must be inside /static for access
-      const fileUrl = "static/Statements.xlsx"; 
+      const fileUrl = "static/Book1.xlsx"; 
       const link = document.createElement("a");
       link.href = fileUrl;
-      link.download = "Statements.xlsx";
+      link.download = "Book1.xlsx";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

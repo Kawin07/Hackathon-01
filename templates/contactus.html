@@ -479,12 +479,12 @@ footer {
     <section id="contact" style="z-index:-1;">
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 10px;">~Contact Us~</h2>
-            <form id="contact-form">
-                <input style="z-index: 1;" type="text" placeholder="Your Name" required>
-                <input style="z-index: 1;" type="text" placeholder="Department" required>
-                <input style="z-index: 1;" type="text" placeholder="Year & Section" required>
-                <input style="z-index: 1;" type="email" placeholder="Your Email" required>
-                <textarea style="z-index: 1;" placeholder="Your Message" required></textarea>
+            <form id="contact-form" method="POST" action="/contactus">
+                <input style="z-index: 1;" name="name" type="text" placeholder="Your Name" required>
+                <input style="z-index: 1;" name="department" type="text" placeholder="Department" required>
+                <input style="z-index: 1;" name="year_section" type="text" placeholder="Year & Section" required>
+                <input style="z-index: 1;" name="email" type="email" placeholder="Your Email" required>
+                <textarea style="z-index: 1;" name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -588,6 +588,7 @@ footer {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+        
     </script>
 </body>
 </html>

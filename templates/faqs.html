@@ -31,6 +31,10 @@ body {
     --color2: #181818 ;
 }
 
+.container {
+    overflow: unset;
+}
+
 /* Navbar Styling */
 .nav-bar {
     width: 100%;
@@ -115,6 +119,7 @@ body {
   width: 100%; /* Full width */
   justify-content: center; /* Center content horizontally */
   padding: 40px;
+  margin-top: 100px;
 }
 
 .accordion .image-box {
@@ -259,6 +264,69 @@ body {
   display: none;
 }
 
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 11.5px 18px;
+  transition: all 0.2s ease;
+  border: 3px solid #552da8;
+  border-radius: 50px;
+  background: #552da8;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  border-radius: 50px;
+  background: white;
+  width: 45px;
+  height: 45px;
+  transition: all 0.8s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: white;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #1c1c1c;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  transition: all 2s ease;
+}
+
+.cta:active {
+  transform: scale(0.95);
+  transition: all 2s ease;
+}
+
+
 @media (max-width: 994px) {
   body {
     padding: 20px;
@@ -384,73 +452,155 @@ body {
     
     <!-- Category Buttons -->
     <div class="category-buttons">
-      <button class="category-btn active" onclick="toggleCategory('category1')">HTML & CSS</button>
-      <button class="category-btn" onclick="toggleCategory('category2')">JavaScript</button>
-      <button class="category-btn" onclick="toggleCategory('category3')">Tools</button>
-      <button class="category-btn" onclick="toggleCategory('category4')">Design</button>
-      <button class="category-btn" style="text-align: center;" onclick="toggleCategory('category5')">Development</button>
+      <button class="category-btn active" onclick="toggleCategory('category1')">Registration</button>
+      <button class="category-btn" onclick="toggleCategory('category2')">Hackathon</button>
+      <button class="category-btn" onclick="toggleCategory('category3')">Time</button>
+      <!-- <button class="category-btn" onclick="toggleCategory('category4')">Design</button>
+      <button class="category-btn" style="text-align: center;" onclick="toggleCategory('category5')">Development</button> -->
     </div>
     
     <!-- HTML & CSS Category -->
-    <div class="faq-category" id="category1">
-      <ul class="faq-text">
-        <li>
-          <div class="question-arrow">
-            <span class="question">What do you mean by HTML & CSS?</span>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
-          <span class="line"></span>
-        </li>
-        <li>
-          <div class="question-arrow">
-            <span class="question">From where you learned HTML & CSS?</span>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
-          <span class="line"></span>
-        </li>
-      </ul>
-    </div>
+    <!-- Registration Category -->
+<div class="faq-category" id="category1">
+  <ul class="faq-text">
+    <li>
+      <div class="question-arrow">
+        <span class="question">How do I register for the hackathon?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Visit the official website, fill out the registration form, and submit it before the deadline.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Is there any registration fee?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Some hackathons are free, while others may charge a small fee. Check the event details.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Can I register alone, or do I need a team?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Most hackathons allow both individual and team registrations. Team sizes vary by event.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">What details are required for registration?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Typically, you need to provide your name, email, college/company, team details, and project idea (if required).</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Can we change team members after registration?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Some hackathons allow modifications before the deadline, while others do not. Check the rules.</p>
+      <span class="line"></span>
+    </li>
+  </ul>
+</div>
 
-    <!-- JavaScript Category -->
-    <div class="faq-category" id="category2" style="display:none;">
-      <ul class="faq-text">
-        <li>
-          <div class="question-arrow">
-            <span class="question">What do you mean by JavaScript?</span>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</p>
-          <span class="line"></span>
-        </li>
-      </ul>
-    </div>
+<!-- Hackathon Category -->
+<div class="faq-category" id="category2" style="display:none;">
+  <ul class="faq-text">
+    <li>
+      <div class="question-arrow">
+        <span class="question">What is the theme or problem statement of the hackathon?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>The themes vary and may include AI, cybersecurity, fintech, healthcare, sustainability, etc.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Who is eligible to participate?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Eligibility depends on the event; some are for students, others for professionals, startups, or open to all.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Will we receive mentorship or guidance?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Yes, most hackathons provide mentors to help with technical and project-related queries.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">What resources or tools will be provided?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Organizers may provide APIs, cloud credits, datasets, and development environments.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">How will projects be judged?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Judging is based on innovation, feasibility, impact, technical implementation, and presentation.</p>
+      <span class="line"></span>
+    </li>
+  </ul>
+</div>
 
-    <!-- Tools Category -->
-    <div class="faq-category" id="category3" style="display:none;">
-      <ul class="faq-text">
-        <li>
-          <div class="question-arrow">
-            <span class="question">Which code editor do you use?</span>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
-          <span class="line"></span>
-        </li>
-        <li>
-          <div class="question-arrow">
-            <span class="question">Software you use for video editing?</span>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
-          <span class="line"></span>
-        </li>
-      </ul>
-    </div>
+<!-- Timing Category -->
+<div class="faq-category" id="category3" style="display:none;">
+  <ul class="faq-text">
+    <li>
+      <div class="question-arrow">
+        <span class="question">How long is the hackathon?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>It can last from 24 hours to multiple days, depending on the format (online/offline).</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">When does the hackathon start and end?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>The official schedule will mention the exact start and end times.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">What is the deadline for project submission?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Submission deadlines are usually a few hours before the final presentations.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">Will there be breaks or rest periods?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Yes, participants are encouraged to take breaks, and some events even provide sleeping areas.</p>
+      <span class="line"></span>
+    </li>
+    <li>
+      <div class="question-arrow">
+        <span class="question">When will the winners be announced?</span>
+        <i class="bx bxs-chevron-down arrow"></i>
+      </div>
+      <p>Winners are usually announced at the closing ceremony after project evaluations.</p>
+      <span class="line"></span>
+    </li>
+  </ul>
+</div>
+
 
     <!-- Design Category -->
-    <div class="faq-category" id="category4" style="display:none;">
+    <!-- <div class="faq-category" id="category4" style="display:none;">
       <ul class="faq-text">
         <li>
           <div class="question-arrow">
@@ -461,10 +611,10 @@ body {
           <span class="line"></span>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- Development Category -->
-    <div class="faq-category" id="category5" style="display:none;">
+    <!-- <div class="faq-category" id="category5" style="display:none;">
       <ul class="faq-text">
         <li>
           <div class="question-arrow">
@@ -475,9 +625,23 @@ body {
           <span class="line"></span>
         </li>
       </ul>
-    </div>
+    </div> -->
 
   </div>
+</div>
+
+<div class="contact-btn" style="justify-content: center; align-items: center; text-align: center; font-size: 2rem;  margin-top: 40px;">
+  <p>For More Doubts Or for Clarifications Contact Out Co-ordinators
+  </P>
+  
+<a href="{{ url_for('contactus')}}">  
+  <button class="cta">
+  <span>Contact Us &nbsp;</span>
+  <svg viewBox="0 0 13 10" height="10px" width="15px">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</button></a>
 </div>
 
 <!-- Footer -->

@@ -10,6 +10,76 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 </head>
+<style>
+/* General styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.about-img {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Reverse layout handling */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .about-text {
+        margin: 0;
+        width: 90%;
+        text-align: justify;
+    }
+
+    /* Ensure image comes first, then content */
+    .reverse {
+        flex-direction: column;
+    }
+}
+
+
+</style>
 
 <body>
     <!-- Navbar with Logo -->
@@ -44,7 +114,7 @@
 
 <header id="home" >
     <div class="hero">
-        <div class="hero-content">
+        <div class="hero-content" style="margin-top: 550px;">
             <p>Innovate, Code, Win!</p>
             <button class="cta-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSelNnyQhc5lNYZ-iclPBxim8latAZD2zZkRW9UHQRWqYqWHZA/viewform?usp=header'">
                 <i class="fas fa-user-plus"></i> Register Now
@@ -63,32 +133,56 @@
         <h2>~About~</h2>
 
         <!-- About College -->
-        <div class="about-content">
+        <div class="about-content reverse">
+            <img src="{{ url_for('static', filename='pec.jpg') }}" alt="College Campus" class="about-img">
             <div class="about-text" style="margin-left: 10px;">
                 <h3>About Our College</h3>
                 <p style="text-align: justify;">Panimalar Engineering College is a premier institution committed to academic excellence and innovation. Our college provides state-of-the-art infrastructure, world-class faculty, and a dynamic learning environment.We emphasize holistic development, equipping students with technical skills, research exposure, and industry-relevant knowledge.</p>
             </div>
-            <img src="{{ url_for('static', filename='pec.jpg') }}" alt="College Campus" class="about-img">
+            
         </div>
 
         <!-- About EEE Department -->
         <div class="about-content reverse">
+            <img src="{{ url_for('static', filename='eeeep.jpg') }}" alt="EEE Department" class="about-img">
             
             <div class="about-text" >
                 <h3>About EEE Department</h3>
                 <p style="text-align: justify;">The Department of Electrical and Electronics Engineering (EEE) at Panimalar Engineering College is dedicated to innovation and excellence in electrical sciences.With advanced laboratories, experienced faculty, and industry collaborations, our department nurtures students to become leaders in power systems, automation, and sustainable energy solutions.</p>
             </div>
-            <img src="{{ url_for('static', filename='pec.jpg') }}" alt="EEE Department" class="about-img">
+            
+        </div>
+        <div class="about-content reverse">
+            <img src="{{ url_for('static', filename='hackathon.jpg') }}" alt="Hackathon Event" class="about-img">
+            
+            <div class="about-text">
+                <h3>About Sparkathon</h3>
+                <p style="text-align: justify;">
+                    <B>Sparkathon</B> is a <B>national-level 48-hour hackathon</B> organized by the <B>EEE Department of Panimalar Engineering College</B>. 
+                    It serves as a platform for innovators, developers, and problem-solvers to <B>collaborate, create, and compete</B> in building real-world solutions using <B>cutting-edge technology</B>.
+                </p>
+                
+                <p style="text-align: justify;">
+                    Participants will have the opportunity to work with <B>industry experts and mentors</B>, enhance their technical skills, and <B>win exciting rewards</B>. 
+                    The event fosters <B>creativity, teamwork, and technical excellence</B>, making it an unmissable experience for tech enthusiasts.
+                </p>
+            
+                <h4 style="margin-top: 10px;">📅 Date & Venue</h4>
+                <p><strong>Date:</strong> March 18th & 19th 2025</p>
+                <p><strong>Venue:</strong> Panimalar Engineering College, Chennai</p>
+            </div>
+            
+            
         </div>
 
         <!-- About Hackathon -->
-        <div class="about-content">
+        <!-- <div class="about-content">
             <div class="about-text" style="margin-left: 10px;">
                 <h3>About the Hackathon</h3>
                 <p style="text-align: justify;">Our annual hackathon is a premier event where bright minds collaborate to solve real-world challenges through technology and innovation.Participants get the opportunity to work with mentors, develop cutting-edge solutions, and compete for exciting rewards, fostering creativity and technical excellence.</p>
             </div>
             <img src="{{ url_for('static', filename='pec.jpg') }}" alt="Hackathon Event" class="about-img">
-        </div>
+        </div> -->
     </div>
 </section>
 
