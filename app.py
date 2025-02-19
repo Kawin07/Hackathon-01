@@ -1,16 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for, json
 import os
 from datetime import datetime
-import pandas as pd
 import firebase_admin
-from firebase_admin import credentials
+from firebase_admin import credentials, firestore
 
 app = Flask(__name__)
 
-# Initialize Firebase using environment variable
-firebase_config = json.loads(os.getenv("FIREBASE_CONFIG"))
+# Initialize Firebase
+firebase_config = json.loads(os.getenv("FIREBASE_CONFIG"))  # Load from Render environment variable
 cred = credentials.Certificate(firebase_config)
 firebase_admin.initialize_app(cred)
+db = firestore.client()  # Firestore instance
 
 # Dropdown options
 domains = [
@@ -40,8 +40,6 @@ def index():
 
 @app.route('/contactus', methods=['GET', 'POST'])
 def contactus():
-    file_path = 'static/contact_submissions.xlsx'
-
     if request.method == 'POST':
         name = request.form['name']
         department = request.form['department']
@@ -50,26 +48,16 @@ def contactus():
         message = request.form['message']
         date_submitted = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-        # Check if file exists and is valid
-        if os.path.exists(file_path):
-            try:
-                df = pd.read_excel(file_path, engine='openpyxl')
-            except Exception:
-                print("Error reading the Excel file. Creating a new one.")
-                df = pd.DataFrame(columns=['Date', 'Name', 'Department', 'Year & Section', 'Email', 'Message'])
-        else:
-            df = pd.DataFrame(columns=['Date', 'Name', 'Department', 'Year & Section', 'Email', 'Message'])
-
-        # Append new data
-        new_entry = pd.DataFrame([[date_submitted, name, department, year_section, email, message]], 
-                                 columns=['Date', 'Name', 'Department', 'Year & Section', 'Email', 'Message'])
-        df = pd.concat([df, new_entry], ignore_index=True)
-
-        # Save back to Excel with error handling
-        try:
-            df.to_excel(file_path, index=False, engine='openpyxl')
-        except Exception as e:
-            print(f"Error saving the Excel file: {e}")
+        # Store data in Firestore
+        contact_ref = db.collection("contact_submissions")
+        contact_ref.add({
+            "Date": date_submitted,
+            "Name": name,
+            "Department": department,
+            "Year & Section": year_section,
+            "Email": email,
+            "Message": message
+        })
 
         return redirect(url_for('success'))  
 
