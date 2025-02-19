@@ -1,20 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for, json
-from flask_mail import Mail, Message
 import os
 from datetime import datetime
 import pandas as pd
+import firebase_admin
+from firebase_admin import credentials
 
 app = Flask(__name__)
 
-# Flask-Mail Configuration (Update with real credentials)
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'your-email@gmail.com'
-app.config['MAIL_PASSWORD'] = 'your-email-password'
-app.config['MAIL_DEFAULT_SENDER'] = 'your-email@gmail.com'
-
-mail = Mail(app)
+# Initialize Firebase using environment variable
+firebase_config = json.loads(os.getenv("FIREBASE_CONFIG"))
+cred = credentials.Certificate(firebase_config)
+firebase_admin.initialize_app(cred)
 
 # Dropdown options
 domains = [
