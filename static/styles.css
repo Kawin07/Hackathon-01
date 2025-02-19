@@ -214,31 +214,6 @@ body {
     transform: translateX(5px); /* Move the icon to the right slightly */
 }
 
-/* About Section */
-#about {
-    background-color: white;
-    padding: 60px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.about-text {
-    flex: 1;
-    padding-right: 30px;
-}
-
-.about-img {
-    width: 400px;
-    height: auto;
-    border-radius: 8px;
-}
 
 
 
